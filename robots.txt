@@ -1,0 +1,4 @@
+User-agent: *
+
+
+Sitemap: https://stephanieskinnerfamilydental.com/sitemap.xml

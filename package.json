@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "http-server -p 3000",
+    "install-server": "npm install http-server -g"
+  }
+}

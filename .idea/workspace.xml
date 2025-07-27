@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="339349a2-1674-4b1f-ba47-2edc5cdeafac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/stephanieskinnerfamilydental.com.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/captcha.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/external-libs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/external-libs﹖1752780638430.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/external-libs﹖1753364757221.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/fonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/fonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/fonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/fonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/fonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/fonts/fa-v4compatibility.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/fonts/fa-v4compatibility.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/grids.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/grids﹖1752780638430.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/grids﹖1753364757221.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/hcaptcha﹖1752780638430.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/hcaptcha﹖1753364757221.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/accordd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ae.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/af.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ai.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/al.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/am.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/americanexpress.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ao.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/aq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/as.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/at.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/au.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/aw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ax.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/az.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ba.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bancontact.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/be.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/br.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/by.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/bz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ca.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cashicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cheque.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ci.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ck.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/co.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/cz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/de.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/dinersclub.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/discover.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/dj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/dk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/dm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/do.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/dz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ec.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ecocheques.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/edenred.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ee.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/eg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/eh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/emailtransfer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/er.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/es-ct.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/es-ga.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/es-pv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/es.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/et.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/eu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/eurosymbolblack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/facturatie.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fr-cash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fr-cheque.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fr-emailtransfer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fr-giftcard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fr-interac.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fr-interacetransfer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fr-travelerscheque.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/fr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ga.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gb-eng.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gb-nir.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gb-sct.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gb-wls.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/giftcard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/gy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/hk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/hm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/hn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/hr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ht.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/hu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/id.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ie.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/il.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/im.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/interac.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/interacetransfer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/io.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/iq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ir.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/is.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/it.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/je.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/jm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/jo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/jp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ke.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/kg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/kh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ki.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/klarna.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/km.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/kn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/kp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/kr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/kw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ky.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/kz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/la.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/lb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/lc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/li.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/lk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/lr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ls.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/lt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/lu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/lv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ly.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ma.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/maestro.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mastercard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/md.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/me.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ml.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mobilepay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ms.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/my.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/mz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/na.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/nc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ne.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/nf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ng.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ni.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/nl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/no.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/np.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/nr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/nu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/nz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/om.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/papal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/paypal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ph.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/postfinance.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ps.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/pw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/py.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/qa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/re.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ro.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/rs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ru.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/rw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/se.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/si.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/so.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sodexo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ss.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/st.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/sz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/td.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/th.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ticketrestaurant.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/to.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/travelerscheque.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/twint.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/tz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ua.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ug.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/um.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/un.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/us.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/uy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/uz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/va.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/vc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ve.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/vg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/vi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/vipps.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/visa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/visaelectron.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/vn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/vpay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/vu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/wf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ws.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/ye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/yt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/za.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/zm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/icons/zw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/images/marker-icon-2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/images/marker-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/img/defaultImgPlaceholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/img/hcaptcha-badge-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/img/hcaptcha-badge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/img/hcaptcha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/img/loading-2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/img/loading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/sitestyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/user-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-v4compatibility.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-v4compatibility.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontello.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontello.eot@" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontello.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/fontello.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-demibold-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-demibold-webfont.eot@" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-demibold-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-demibold-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-demibold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-extrabold-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-extrabold-webfont.eot@" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-extrabold-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-extrabold-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-extrabold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-extrabold-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-regular-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-regular-webfont.eot@" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-regular-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-regular-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/nationale-regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/animate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/awsErrorLogger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/blogpost.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/fitvids.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/gallery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/html5shiv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery-migrate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery-modern.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.serialize-object.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lazyload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/leaflet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/loader-polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/mapbox-gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/monoRobots.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/monosocial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/monotracker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/osmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/quicklink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/respond.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/rowgroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/scrollTop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/touch-events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b/site-launch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.rss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meet-the-team.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/cosmetic-implants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/dental-fillings-and-crowns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/dental-hygiene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/emergency-dentistry.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/full-and-partial-dentures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/paperwork.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/sedation-dentistry.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/the-office.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0J2XWBVI/Dr.StephanieL.Skinner-FamilyDentistry-0017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0qEhTUsC/MeetTheTeam2022Cropped.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0wX1KUX6/Dr.StephanieL.Skinner-FamilyDentistry-003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/1chyiBOi/Dr.StephanieL.Skinner-FamilyDentistry-0056.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/6M1n4F0c/Dr.StephanieL.Skinner-FamilyDentistry-0013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/6XfbegLb/Dr.StephanieL.Skinner-FamilyDentistry-003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/77QWaZEL/Dr.StephanieL.Skinner-FamilyDentistry-0057.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/8vBVkn2z/Dr.StephanieL.Skinner-FamilyDentistry-0051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/9R89r1E3/Dr.StephanieL.Skinner-FamilyDentistry-020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/9pmdbcz9/colorlogo-e1549412436478.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/D1BD6oTB/NewPatientRegistrationForms.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/DDnkv6hM/Dr.StephanieL.Skinner-FamilyDentistry-005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/GI5R22Qb/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/HWOb9nMy/Dr.StephanieL.Skinner-FamilyDentistry-0010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/KijeHT3E/Dr.StephanieL.Skinner-FamilyDentistry-007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/M6rwIDeR/Dr.StephanieL.Skinner-FamilyDentistry-021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/MPom9hXs/Dr.StephanieL.Skinner-FamilyDentistry-0053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/ShvJ1YKQ/Dr.StephanieL.Skinner-FamilyDentistry-006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/T0ojeUcw/Dr.StephanieL.Skinner-FamilyDentistry-0014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/VHQzQeNZ/Dr.StephanieL.Skinner-FamilyDentistry-0012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/WKB0lDFs/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/X1pjXqlz/Dr.StephanieL.Skinner-FamilyDentistry-0018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/XCsmUDRR/Dr.StephanieL.Skinner-FamilyDentistry-022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/ebzAj1FB/Dr.StephanieL.Skinner-FamilyDentistry-009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/ecvFM66V/Dr.StephanieL.Skinner-FamilyDentistry-024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/g00935AH/Dr.StephanieL.Skinner-FamilyDentistry-001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/kV4MMXNa/Dr.StephanieL.Skinner-FamilyDentistry-0015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/oj11tZul/Dr.StephanieL.Skinner-FamilyDentistry-008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/qtIz2iYk/Dr.StephanieL.Skinner-FamilyDentistry-023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/s4LyVzTc/Dr.StephanieL.Skinner-FamilyDentistry-0058.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/tcWrZtgz/crosswords.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/uiyg4fYO/Dr.StephanieL.Skinner-FamilyDentistry-0016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/xTXoZP04/Dr.StephanieL.Skinner-FamilyDentistry-0052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/yS2P7efK/Dr.StephanieL.Skinner-FamilyDentistry-0054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/ybRybGHn/Dr.StephanieL.Skinner-FamilyDentistry-025.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="30STmMA9PYlEBViqYUsmc21pyOf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "js.debugger.nextJs.config.created.client": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "C:\\Users\\kado\\dev\\skinnerfamilydental\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="339349a2-1674-4b1f-ba47-2edc5cdeafac" name="Changes" comment="" />
+      <created>1753620132898</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753620132898</updated>
+      <workItem from="1753620135007" duration="887000" />
+      <workItem from="1753621042679" duration="905000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function TheOfficePage() {
   return (
@@ -39,7 +40,7 @@ export default function TheOfficePage() {
                           >
                             <span className="thumb">
                               <span className="thumbInner">
-                                <img
+                                <Image
                                   src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0014.jpg"
                                   alt=""
                                   width={800}
@@ -57,7 +58,7 @@ export default function TheOfficePage() {
                           >
                             <span className="thumb">
                               <span className="thumbInner">
-                                <img
+                                <Image
                                   src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0015.jpg"
                                   alt=""
                                   width={800}
@@ -75,7 +76,7 @@ export default function TheOfficePage() {
                           >
                             <span className="thumb">
                               <span className="thumbInner">
-                                <img
+                                <Image
                                   src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0016.jpg"
                                   alt=""
                                   width={800}
@@ -93,7 +94,7 @@ export default function TheOfficePage() {
                           >
                             <span className="thumb">
                               <span className="thumbInner">
-                                <img
+                                <Image
                                   src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0017.jpg"
                                   alt=""
                                   width={800}
@@ -111,7 +112,7 @@ export default function TheOfficePage() {
                           >
                             <span className="thumb">
                               <span className="thumbInner">
-                                <img
+                                <Image
                                   src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0018.jpg"
                                   alt=""
                                   width={800}
@@ -129,7 +130,7 @@ export default function TheOfficePage() {
                           >
                             <span className="thumb">
                               <span className="thumbInner">
-                                <img
+                                <Image
                                   src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-020.jpg"
                                   alt=""
                                   width={800}
@@ -147,7 +148,7 @@ export default function TheOfficePage() {
                           >
                             <span className="thumb">
                               <span className="thumbInner">
-                                <img
+                                <Image
                                   src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-021.jpg"
                                   alt=""
                                   width={800}
@@ -165,7 +166,7 @@ export default function TheOfficePage() {
                           >
                             <span className="thumb">
                               <span className="thumbInner">
-                                <img
+                                <Image
                                   src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-022.jpg"
                                   alt=""
                                   width={800}
@@ -183,7 +184,7 @@ export default function TheOfficePage() {
                           >
                             <span className="thumb">
                               <span className="thumbInner">
-                                <img
+                                <Image
                                   src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-023.jpg"
                                   alt=""
                                   width={800}

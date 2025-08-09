@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function DentalFillingsAndCrownsPage() {
   return (
@@ -77,7 +78,7 @@ export default function DentalFillingsAndCrownsPage() {
               <div className="container container-fixed">
                 <div id="c5324" className="col col-sm-12 col-md-12">
                   <div className="imageModuleWrap" id="w_m4580">
-                    <img src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-025.jpg" alt="" width={400} height={497} />
+                    <Image src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-025.jpg" alt="" width={400} height={497} />
                   </div>
                 </div>
               </div>

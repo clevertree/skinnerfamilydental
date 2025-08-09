@@ -68,7 +68,7 @@ export default function EmergencyDentistryPage() {
                                               data-req="ext-//www.youtube.com/iframe_api"
                                               src="https://www.youtube.com/embed/X2bHz3noTWo?enablejsapi=1&playerapiid=player_m3556"
                                               style={{ border: 0 }}
-                                              allowFullScreen=""
+                                              allowFullScreen
                                               name="fitvid0"
                                           />
                                       </div>

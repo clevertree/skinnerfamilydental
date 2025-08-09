@@ -18,7 +18,6 @@ const AnimationWrapper: React.FC<ZoomInWrapperProps> = ({children, className, me
         const observer = new window.IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    console.log('intersecting', entry);
                     setAnimationActive(true);
                     observer.disconnect();
                 }

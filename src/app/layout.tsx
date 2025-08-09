@@ -188,11 +188,16 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                             style={{fontWeight: 'bold'}}>*Private/sedation appointments available by request.</span></p>
                         </div>
                     </div>
-                    <div id="c3299" className="col col-sm-12 col-lg-4 col-md-12 disabled-component">
+                    <div id="c3299" className="col col-sm-12 col-lg-4 col-md-12">
                         <div id="m1815" className="module text"><p className="custom2">Map</p></div>
                         <div id="m4074" className="module map osmap">
-                            <div className="map-container" aria-label="10515 White Bluff Road, 31406, Savannah, US"
-                                 data-address="10515 White Bluff Road, 31406, Savannah, US" data-zoom="10"></div>
+                            <iframe
+                                className='w-full h-full'
+                                loading="lazy"
+                                allowFullScreen
+                                referrerPolicy="no-referrer-when-downgrade"
+                                src={"https://www.google.com/maps/embed/v1/place?key=" + process.env.GOOGLE_API_KEY + "&q=" + encodeURIComponent(process.env.BUSINESS_ADDRESS || '')}>
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -200,9 +205,15 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         </footer>
         <div className="row brandfooter">
             <div className="container container-">
-                <div className="col col-sm-12 text-left"><p>Managed by <a rel="nofollow noopener"
-                                                                          href="mailto:ari@asu.edu" target="_blank">Ari
-                    Asulin</a></p></div>
+                <div className="col col-sm-12 text-left">
+                    <p>
+                        Managed by{' '}
+                        <a rel="nofollow noopener"
+                           href="mailto:ari@asu.edu" target="_blank">
+                            Ari Asulin
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
         </body>

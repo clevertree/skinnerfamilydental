@@ -1,0 +1,23 @@
+/*.animation-method-zoom-in {*/
+/*}*/
+
+
+.animation {
+    display: inline-block;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-in;
+    transform-origin: center center; /* Ensures scaling from the center */
+    /*opacity: 1;*/
+    /*transform: scale(1);*/
+    /*}*/
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.inactive {
+    opacity: 0;
+    transform: scale(0.1);
+}
+

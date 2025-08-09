@@ -1,5 +1,6 @@
 import React from 'react';
-import AnimationWrapper from "@/component/Animation/AnimationWrapper";
+import AnimationWrapper from "@components/Animation/AnimationWrapper";
+import HomePageSlideShow from "@app/frag/homePageSlideShow";
 
 export default function HomePage() {
     return (
@@ -20,126 +21,9 @@ export default function HomePage() {
                                 <li className=""/>
                                 <li className=""/>
                             </ul>
-                            <div id="r3286" className="row inRowgroupView" style={{}}>
-                                <div className="container container-fixed">
-                                    <div
-                                        id="c4062"
-                                        className="col col-sm-12 col-md-3 col-lg-3 hidden-lg hidden-md flexCol"
-                                    >
-                                        <div id="m2337" className="module autospacer"/>
-                                    </div>
-                                    <div
-                                        id="c1636"
-                                        className="col col-sm-12 col-lg-5 col-md-6"
-                                        style={{}}
-                                    >
-                                        <div id="m4943" className="module text">
-                                            <h1 className="spottext">
-                                                Compassionate Dental Care
-                                                <br/>
-                                                For the Entire Family
-                                            </h1>
-                                        </div>
-                                        <AnimationWrapper method='zoom-in'>
-                                            <a
-                                                id="m3868"
-                                                className="module button2"
-                                                href="/meet-the-team"
-                                                title=""
-                                                role="button"
-                                                data-track-event="click"
-                                                data-track-action="internal_link_clicked"
-                                            >
-                                                {" "}
-                                                <span className="buttonLabel labelRight">LEARN MORE</span>{" "}
-                                            </a>
-                                        </AnimationWrapper>
-                                    </div>
-                                    <div className="col col-sm-12 col-md-3 col-lg-4 hidden-sm flexCol">
-                                        <div id="m4893" className="module autospacer"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="r4945" className="row outOfRowgroupView" style={{}}>
-                                <div className="container container-fixed">
-                                    <div
-                                        id="c1387"
-                                        className="col col-sm-12 col-md-3 col-lg-3 hidden-lg hidden-md flexCol"
-                                    >
-                                        <div id="m3455" className="module autospacer"/>
-                                    </div>
-                                    <div
-                                        id="c2174"
-                                        className="col col-sm-12 col-lg-5 col-md-6"
-                                        style={{}}
-                                    >
-                                        <div id="m3018" className="module text">
-                                            <p className="spottext">
-                                                Compassionate Dental Care
-                                                <br/>
-                                                For the Entire Family
-                                            </p>
-                                        </div>
-                                        <AnimationWrapper method='zoom-in'>
-                                            <a
-                                                id="m4529"
-                                                className="module button2 animated animationDone"
-                                                href="/meet-the-team"
-                                                title=""
-                                                role="button"
-                                                data-track-event="click"
-                                                data-track-action="internal_link_clicked"
-                                            >
-                                                {" "}
-                                                <span className="buttonLabel labelRight">LEARN MORE</span>{" "}
-                                            </a>
-                                        </AnimationWrapper>
-                                    </div>
-                                    <div className="col col-sm-12 col-md-3 col-lg-4 hidden-sm flexCol">
-                                        <div id="m3814" className="module autospacer"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="r1602" className="row outOfRowgroupView" style={{}}>
-                                <div className="container container-fixed">
-                                    <div
-                                        id="c2779"
-                                        className="col col-sm-12 col-md-3 col-lg-3 hidden-lg hidden-md flexCol"
-                                    >
-                                        <div id="m1569" className="module autospacer"/>
-                                    </div>
-                                    <div
-                                        id="c1269"
-                                        className="col col-sm-12 col-lg-5 col-md-6"
-                                        style={{}}
-                                    >
-                                        <div id="m3125" className="module text">
-                                            <p className="spottext">
-                                                Compassionate Dental Care
-                                                <br/>
-                                                For the Entire Family
-                                            </p>
-                                        </div>
-                                        <a
-                                            id="m4094"
-                                            className="module button2 animated animationDone"
-                                            href="/meet-the-team"
-                                            title=""
-                                            data-animate="zoomIn"
-                                            role="button"
-                                            data-track-event="click"
-                                            data-track-action="internal_link_clicked"
-                                        >
-                                            {" "}
-                                            <span className="buttonLabel labelRight">LEARN MORE</span>{" "}
-                                        </a>
-                                    </div>
-                                    <div className="col col-sm-12 col-md-3 col-lg-4 hidden-sm flexCol">
-                                        <div id="m2627" className="module autospacer"/>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                        <HomePageSlideShow/>
+
                         <div id="r4008" className="row ">
                             <div className="container container-fixed">
                                 <div className="col col-sm-12 col-md-1 col-lg-2 hidden-sm flexCol">

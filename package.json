@@ -1,7 +1,25 @@
 {
-  "version": "0.0.1",
+  "name": "stephanieskinnerfamilydental-nextjs",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "http-server -p 3000",
-    "install-server": "npm install http-server -g"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.4.6"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "@eslint/eslintrc": "^3"
   }
 }

@@ -28,6 +28,14 @@
             </PendingDiffInfo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/component/Carousel/Carousel.tsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/component/Carousel/Carousel.tsx" />
+              <option name="updatedContent" value="import React from 'react';&#10;import Carousel from 'react-material-ui-carousel';&#10;import { Paper, Button } from '@mui/material';&#10;&#10;export interface CarouselItem {&#10;  title: string;&#10;  description: string;&#10;  image?: string;&#10;  buttonText?: string;&#10;  onClick?: () =&gt; void;&#10;}&#10;&#10;interface CustomCarouselProps {&#10;  items: CarouselItem[];&#10;  autoPlay?: boolean;&#10;  interval?: number;&#10;}&#10;&#10;const CustomCarousel: React.FC&lt;CustomCarouselProps&gt; = ({ items, autoPlay = true, interval = 4000 }) =&gt; {&#10;  return (&#10;    &lt;Carousel autoPlay={autoPlay} interval={interval}&gt;&#10;      {items.map((item, i) =&gt; (&#10;        &lt;Paper key={i} style={{ padding: 24, textAlign: 'center', position: 'relative' }}&gt;&#10;          {item.image &amp;&amp; (&#10;            &lt;img src={item.image} alt={item.title} style={{ maxWidth: '100%', maxHeight: 300, marginBottom: 16 }} /&gt;&#10;          )}&#10;          &lt;h2&gt;{item.title}&lt;/h2&gt;&#10;          &lt;p&gt;{item.description}&lt;/p&gt;&#10;          {item.buttonText &amp;&amp; (&#10;            &lt;Button variant=&quot;contained&quot; color=&quot;primary&quot; onClick={item.onClick}&gt;&#10;              {item.buttonText}&#10;            &lt;/Button&gt;&#10;          )}&#10;        &lt;/Paper&gt;&#10;      ))}&#10;    &lt;/Carousel&gt;&#10;  );&#10;};&#10;&#10;export default CustomCarousel;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/tailwind.config.js">
           <value>
             <PendingDiffInfo>

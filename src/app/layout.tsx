@@ -23,7 +23,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         <head>
             <meta charSet="UTF-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <link rel="shortcut icon" type="image/x-icon" href="/assets/uploads/imgs/favicon.ico"/>
+            <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
             <link rel="preload" href="https://css-fonts.eu.extra-cdn.com/css?family=Roboto:300,500&display=swap"
                   as="style"/>
             <link href="https://css-fonts.eu.extra-cdn.com/css?family=Roboto:300,500&display=swap" rel="stylesheet"/>

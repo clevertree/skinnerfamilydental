@@ -1,0 +1,60 @@
+/* Combined global styles from sitestyle.css and user-style.css */
+@import url('https://fonts.prod.extra-cdn.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin,latin-ext,cyrillic-ext,greek,greek-ext,cyrillic&display=swap');
+
+.headline {
+    font-size: 32px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    font-family: Crimson Text;
+    font-weight: 800;
+}
+
+nav {
+    text-align: right;
+}
+
+nav > ul li > a {
+    color: rgb(87, 87, 87);
+    font-size: 18px;
+    font-family: Open Sans;
+    font-weight: 400;
+}
+
+nav > ul li > a:hover {
+    color: rgb(87, 87, 87);
+}
+
+nav > ul li.active > a {
+    font-weight: 800;
+}
+
+nav > ul li a {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* ...additional styles from both files should be merged here for full migration... */
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Removed invalid @theme inline block for build compatibility */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

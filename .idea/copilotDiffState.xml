@@ -61,11 +61,51 @@
             </PendingDiffInfo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/components/Navigation/NavLink.tsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/components/Navigation/NavLink.tsx" />
+              <option name="updatedContent" value="&quot;use client&quot;;&#10;import React from &quot;react&quot;;&#10;import Link from &quot;next/link&quot;;&#10;import { usePathname } from &quot;next/navigation&quot;;&#10;&#10;interface NavLinkProps {&#10;  href: string;&#10;  children: React.ReactNode;&#10;  activeClassName?: string;&#10;  className?: string;&#10;}&#10;&#10;const NavLink: React.FC&lt;NavLinkProps&gt; = ({ href, children, activeClassName = &quot;text-blue-600 font-bold&quot;, className = &quot;&quot; }) =&gt; {&#10;  const pathname = usePathname();&#10;  const isActive = pathname === href;&#10;  return (&#10;    &lt;Link&#10;      href={href}&#10;      className={&#10;        className + (isActive ? ` ${activeClassName}` : &quot;&quot;)&#10;      }&#10;      aria-current={isActive ? &quot;page&quot; : undefined}&#10;    &gt;&#10;      {children}&#10;    &lt;/Link&gt;&#10;  );&#10;};&#10;&#10;export default NavLink;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/Navigation/ResponsiveMenu.tsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/components/Navigation/ResponsiveMenu.tsx" />
+              <option name="updatedContent" value="&quot;use client&quot;;&#10;import React, { useState } from &quot;react&quot;;&#10;&#10;interface ResponsiveMenuProps {&#10;  children: React.ReactNode;&#10;}&#10;&#10;const ResponsiveMenu: React.FC&lt;ResponsiveMenuProps&gt; = ({ children }) =&gt; {&#10;  const [open, setOpen] = useState(false);&#10;&#10;  return (&#10;    &lt;nav&gt;&#10;      {/* Desktop/Tablet */}&#10;      &lt;ul className=&quot;hidden md:flex flex-row gap-4 items-center&quot;&gt;&#10;        {children}&#10;      &lt;/ul&gt;&#10;      {/* Mobile */}&#10;      &lt;div className=&quot;md:hidden flex items-center&quot;&gt;&#10;        &lt;button&#10;          aria-label=&quot;Open menu&quot;&#10;          onClick={() =&gt; setOpen(true)}&#10;          className=&quot;p-2 focus:outline-none&quot;&#10;        &gt;&#10;          &lt;span className=&quot;material-icons&quot;&gt;menu&lt;/span&gt;&#10;        &lt;/button&gt;&#10;        {/* Overlay */}&#10;        {open &amp;&amp; (&#10;          &lt;div&#10;            className=&quot;fixed inset-0 bg-black bg-opacity-40 z-40&quot;&#10;            onClick={() =&gt; setOpen(false)}&#10;          /&gt;&#10;        )}&#10;        {/* Sliding Menu */}&#10;        &lt;div&#10;          className={`fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg transform transition-transform duration-300 ${open ? 'translate-x-0' : 'translate-x-full'}`}&#10;        &gt;&#10;          &lt;button&#10;            aria-label=&quot;Close menu&quot;&#10;            onClick={() =&gt; setOpen(false)}&#10;            className=&quot;p-4 focus:outline-none float-right&quot;&#10;          &gt;&#10;            &lt;span className=&quot;material-icons&quot;&gt;close&lt;/span&gt;&#10;          &lt;/button&gt;&#10;          &lt;ul className=&quot;flex flex-col gap-4 mt-16 p-4&quot;&gt;&#10;            {children}&#10;          &lt;/ul&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/nav&gt;&#10;  );&#10;};&#10;&#10;export default ResponsiveMenu;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/components/PromoBanner.tsx">
           <value>
             <PendingDiffInfo>
               <option name="filePath" value="$PROJECT_DIR$/src/components/PromoBanner.tsx" />
               <option name="updatedContent" value="import React from 'react';&#10;&#10;const PromoBanner: React.FC = () =&gt; (&#10;  &lt;div id=&quot;r4008&quot; className=&quot;row &quot;&gt;&#10;    &lt;div className=&quot;container container-fixed&quot;&gt;&#10;      &lt;div className=&quot;col col-sm-12 col-md-1 col-lg-2 hidden-sm flexCol&quot;&gt;&#10;        &lt;div id=&quot;m3226&quot; className=&quot;module autospacer&quot; /&gt;&#10;      &lt;/div&gt;&#10;      &lt;div id=&quot;c9253&quot; className=&quot;col col-sm-12 col-md-10 col-lg-8&quot;&gt;&#10;        &lt;div id=&quot;m2401&quot; className=&quot;module text&quot;&gt;&#10;          &lt;h2 className=&quot;darksmallspottext&quot;&gt;&#10;            Get $40 off of our 1-hour whitening treatment for Graduation or Weddings&#10;          &lt;/h2&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;      &lt;div className=&quot;col col-sm-12 col-md-1 col-lg-2 hidden-sm flexCol&quot;&gt;&#10;        &lt;div id=&quot;m3347&quot; className=&quot;module autospacer&quot; /&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;);&#10;&#10;export default PromoBanner;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/ServiceHeader.tsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/components/ServiceHeader.tsx" />
+              <option name="updatedContent" value="import React from 'react';&#10;&#10;interface ServiceHeaderProps {&#10;  title: string;&#10;}&#10;&#10;const ServiceHeader: React.FC&lt;ServiceHeaderProps&gt; = ({ title }) =&gt; (&#10;  &lt;div id=&quot;r2801&quot; className=&quot;row bgfilter&quot;&gt;&#10;    &lt;div className=&quot;container container-fixed&quot;&gt;&#10;      &lt;div className=&quot;col col col-sm-1 hidden-sm&quot; /&gt;&#10;      &lt;div className=&quot;col col-lg-10 col-md-10 col-sm-12&quot;&gt;&#10;        &lt;div className=&quot;module text&quot;&gt;&#10;          &lt;h1 className=&quot;spottext&quot; style={{ textAlign: 'center' }}&gt;{title}&lt;/h1&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;      &lt;div className=&quot;col col col-sm-1 hidden-sm&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;);&#10;&#10;export default ServiceHeader;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/ServiceSection.tsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/components/ServiceSection.tsx" />
+              <option name="updatedContent" value="import React from 'react';&#10;&#10;interface ServiceSectionProps {&#10;  headline: string;&#10;  body: string;&#10;  align?: 'left' | 'center';&#10;}&#10;&#10;const ServiceSection: React.FC&lt;ServiceSectionProps&gt; = ({ headline, body, align = 'center' }) =&gt; (&#10;  &lt;div className=&quot;row &quot;&gt;&#10;    &lt;div className=&quot;container container-fixed&quot;&gt;&#10;      &lt;div className=&quot;col col-sm-12 col-lg-2 col-md-1 hidden-sm flexCol&quot;&gt;&#10;        &lt;div className=&quot;module autospacer&quot; /&gt;&#10;      &lt;/div&gt;&#10;      &lt;div className=&quot;col col-sm-12 col-lg-8 col-md-10&quot;&gt;&#10;        &lt;div className=&quot;module text&quot;&gt;&#10;          &lt;h2 className=&quot;headline&quot; style={{ textAlign: align }}&gt;{headline}&lt;/h2&gt;&#10;        &lt;/div&gt;&#10;        &lt;div className=&quot;module text&quot;&gt;&#10;          &lt;p className=&quot;bodytext&quot; style={{ textAlign: align }}&gt;{body}&lt;/p&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;      &lt;div className=&quot;col col-sm-12 col-lg-2 col-md-1 hidden-sm flexCol&quot;&gt;&#10;        &lt;div className=&quot;module autospacer&quot; /&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;);&#10;&#10;export default ServiceSection;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/ServiceVideoSection.tsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/components/ServiceVideoSection.tsx" />
+              <option name="updatedContent" value="import React from 'react';&#10;&#10;interface ServiceVideoSectionProps {&#10;  subtitle: string;&#10;  videoTitle: string;&#10;  videoSrc: string;&#10;}&#10;&#10;const ServiceVideoSection: React.FC&lt;ServiceVideoSectionProps&gt; = ({ subtitle, videoTitle, videoSrc }) =&gt; (&#10;  &lt;div className=&quot;flexCol&quot;&gt;&#10;    &lt;div className=&quot;flexWrap&quot;&gt;&#10;      &lt;div className=&quot;module text&quot;&gt;&#10;        &lt;h3 className=&quot;subtitle&quot; style={{ textAlign: 'left' }}&gt;{subtitle}&lt;/h3&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;div className=&quot;module autospacer&quot; /&gt;&#10;    &lt;div className=&quot;flexWrap&quot;&gt;&#10;      &lt;div className=&quot;module video&quot; data-req=&quot;video&quot;&gt;&#10;        &lt;div className=&quot;cookieconsent-optin-marketing mono-video-wrapper&quot;&gt;&#10;          &lt;div className=&quot;fluid-width-video-wrapper&quot;&gt;&#10;            &lt;iframe&#10;              title={videoTitle}&#10;              src={videoSrc}&#10;              style={{ border: 0 }}&#10;              allowFullScreen&#10;            /&gt;&#10;          &lt;/div&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;);&#10;&#10;export default ServiceVideoSection;&#10;" />
             </PendingDiffInfo>
           </value>
         </entry>

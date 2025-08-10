@@ -46,6 +46,16 @@ a {
     }
 }
 
+.phone {
+    line-height: 1.1em;
+    font-size: 20px;
+    text-align: right;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+}
+
 /*.animate-zoom-in {*/
 /*    animation: zoom-in 3s ease-in-out;*/
 /*}*/

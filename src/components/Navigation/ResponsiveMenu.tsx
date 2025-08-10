@@ -1,15 +1,28 @@
 "use client";
 import {Button} from "@mui/material";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import styles from "./ResponsiveMenu.module.scss"
+import {usePathname} from 'next/navigation';
 
 interface ResponsiveMenuProps {
     children: React.ReactNode;
 }
 
+let timeout: number | undefined = -1;
+
 const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({children}) => {
     const [open, setOpen] = useState(false);
-    console.log(open);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        if (open) {
+            if (timeout) window.clearTimeout(timeout);
+            timeout = window.setTimeout(() => {
+                setOpen(false);
+            }, 1000);
+        }
+    }, [pathname]); // 'pathname' as a dependency ensures the effect re-runs on path changes
+
 
     return (
         <nav tabIndex={-1} className="w-full">
@@ -30,13 +43,13 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({children}) => {
                 {/* Overlay */}
                 {open && (
                     <div
-                        className="fixed inset-0 bg-black bg-opacity-40 z-40"
+                        className="fixed inset-0 bg-black bg-opacity-40 z-40 transition-opacity duration-300"
                         onClick={() => setOpen(false)}
                     />
                 )}
                 {/* Sliding Menu */}
                 <div
-                    className={`fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg transform transition-transform duration-300 ${styles.menuMobile} ${open ? styles.menuOpen : styles.menuClose}`}
+                    className={`fixed top-0 right-0 h-full w-64 z-50 shadow-lg transform transition-transform duration-300 ${styles.menuMobile} ${open ? styles.menuOpen : styles.menuClose}`}
                 >
                     <div className='absolute right-0'>
                         <Button

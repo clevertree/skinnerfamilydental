@@ -1,4 +1,6 @@
 import React from 'react';
+import ContactForm from "@components/Forms/ContactForm";
+import {sendContactFormEmail} from "../../actions/emailActions";
 
 export default function ContactPage() {
     return (
@@ -53,53 +55,8 @@ export default function ContactPage() {
                                         style={{fontWeight: 'bold'}}>*Private/sedation appointments available by request.</span>
                                     </p></div>
                                 </div>
-                                <div id="c3355" className="col col-md-6 col-sm-12 col-lg-6 disabled-component">
-                                    <div id="m2580" className="module text"><h2 className="bodytext">Contact our dental
-                                        office in Savannah, GA, to schedule an appointment for routine cleanings or
-                                        emergency services today.</h2></div>
-                                    <form method="post" id="m3187" className="module form" data-url="?m=m3187"
-                                          data-req="form,ext-https://js.hcaptcha.com/1/api.js?onload=formsInitHcaptcha&render=explicit"
-                                          data-settings="margin=1" data-track-action="custom_form">
-                                        <div className="fields clear">
-                                            <div className="field w50 "><label htmlFor="m3187_field_0">First
-                                                Name*</label>
-                                                <input type="text" name="field_0" autoComplete="on" id="m3187_field_0"
-                                                       placeholder="" required aria-required="true"/>
-                                            </div>
-                                            <div className="field w50 "><label htmlFor="m3187_field_1">Last Name
-                                                *</label>
-                                                <input type="text" name="field_1" autoComplete="on" id="m3187_field_1"
-                                                       placeholder="" required aria-required="true"/>
-                                            </div>
-                                            <div className="field w50 "><label htmlFor="m3187_field_2">Email*</label>
-                                                <input type="email" name="field_2" autoComplete="email"
-                                                       id="m3187_field_2" placeholder="" required aria-required="true"/>
-                                            </div>
-                                            <div className="field w50 "><label htmlFor="m3187_field_3">Phone *</label>
-                                                <input type="tel" name="field_3" autoComplete="tel" id="m3187_field_3"
-                                                       placeholder="" required aria-required="true"/>
-                                            </div>
-                                            <div className="field w100 "><label htmlFor="m3187_field_4">Desired
-                                                Service</label>
-                                                <select id="m3187_field_4" name="field_4">
-                                                    <option value="Select option" defaultValue="Select option"
-                                                            disabled>Select option
-                                                    </option>
-                                                    <option value="Cleaning">Cleaning</option>
-                                                    <option value="Filling/Crown">Filling/Crown</option>
-                                                    <option value="Dentures">Dentures</option>
-                                                    <option value="Sedation Dentistry">Sedation Dentistry</option>
-                                                    <option value="Emergency Service">Emergency Service</option>
-                                                </select>
-                                            </div>
-                                            <div className="field w100 "><label htmlFor="m3187_field_5">Comments</label>
-                                                <textarea name="field_5" id="m3187_field_5" placeholder=""></textarea>
-                                            </div>
-                                        </div>
-                                        <div className="optins clear"></div>
-                                        {/* hCaptcha and error handling would go here in a real implementation */}
-                                        <input type="submit" className="button " value="SUBMIT"/>
-                                    </form>
+                                <div id="c3355" className="col col-md-6 col-sm-12 col-lg-6">
+                                    <ContactForm sendForm={sendContactFormEmail}/>
                                 </div>
                             </div>
                         </div>

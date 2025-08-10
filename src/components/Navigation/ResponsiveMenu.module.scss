@@ -1,8 +1,27 @@
 .menuMobile {
     font-family: "Open Sans", sans-serif;
     display: inline-block;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-in;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
     transform-origin: center center;
+    background-color: #FFFE;
+
+    li > ul {
+        cursor: pointer;
+        z-index: 9;
+        margin: 0.3rem;
+        padding: 0;
+
+        :hover {
+            background-color: #c2c2c2;
+
+        }
+
+        li {
+            padding: .4rem;
+            margin: 0;
+            list-style: none;
+        }
+    }
 }
 
 .menuDesktop {

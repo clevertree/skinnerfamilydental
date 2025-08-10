@@ -46,6 +46,16 @@ a {
     }
 }
 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important; /* Change to your desired background color */
+    -webkit-text-fill-color: black !important; /* Change text color if needed */
+}
+
+
 .phone {
     line-height: 1.1em;
     font-size: 20px;

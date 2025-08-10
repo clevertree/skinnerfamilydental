@@ -1,5 +1,10 @@
 import React from 'react';
 import PhilipsAd from "@components/PhilipsAd";
+import type {Metadata} from 'next';
+
+export const metadata: Metadata = {
+    title: 'Full and Partial Dentures | Stephanie L. Skinner D.M.D. Family Dentistry',
+};
 
 export default function FullAndPartialDenturesPage() {
     return (
@@ -88,4 +93,3 @@ export default function FullAndPartialDenturesPage() {
 
     );
 }
-

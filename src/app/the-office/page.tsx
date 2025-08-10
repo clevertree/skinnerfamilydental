@@ -1,5 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
+import type {Metadata} from 'next';
+import SlideShow from '@components/SlideShow';
+
+export const metadata: Metadata = {
+  title: 'The Office | Stephanie L. Skinner D.M.D. Family Dentistry',
+};
 
 export default function TheOfficePage() {
   return (
@@ -30,172 +35,64 @@ export default function TheOfficePage() {
                     <h2 className="headline">Tour Our Office</h2>
                   </div>
                   <div id="m4658" className="module gallery" role="region" aria-label="Slides">
-                    <div className="slides" aria-live="polite">
-                      <ul className="pics clear">
-                        <li>
-                          <a
-                            href="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0014.jpg"
-                            title=""
-                            aria-label="Image, Opens dialog"
-                          >
-                            <span className="thumb">
-                              <span className="thumbInner">
-                                <Image
-                                  src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0014.jpg"
-                                  alt=""
-                                  width={800}
-                                  height={646}
-                                />
-                              </span>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0015.jpg"
-                            title=""
-                            aria-label="Image, Opens dialog"
-                          >
-                            <span className="thumb">
-                              <span className="thumbInner">
-                                <Image
-                                  src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0015.jpg"
-                                  alt=""
-                                  width={800}
-                                  height={631}
-                                />
-                              </span>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0016.jpg"
-                            title=""
-                            aria-label="Image, Opens dialog"
-                          >
-                            <span className="thumb">
-                              <span className="thumbInner">
-                                <Image
-                                  src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0016.jpg"
-                                  alt=""
-                                  width={800}
-                                  height={636}
-                                />
-                              </span>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0017.jpg"
-                            title=""
-                            aria-label="Image, Opens dialog"
-                          >
-                            <span className="thumb">
-                              <span className="thumbInner">
-                                <Image
-                                  src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0017.jpg"
-                                  alt=""
-                                  width={800}
-                                  height={636}
-                                />
-                              </span>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0018.jpg"
-                            title=""
-                            aria-label="Image, Opens dialog"
-                          >
-                            <span className="thumb">
-                              <span className="thumbInner">
-                                <Image
-                                  src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0018.jpg"
-                                  alt=""
-                                  width={800}
-                                  height={649}
-                                />
-                              </span>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-020.jpg"
-                            title=""
-                            aria-label="Image, Opens dialog"
-                          >
-                            <span className="thumb">
-                              <span className="thumbInner">
-                                <Image
-                                  src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-020.jpg"
-                                  alt=""
-                                  width={800}
-                                  height={636}
-                                />
-                              </span>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-021.jpg"
-                            title=""
-                            aria-label="Image, Opens dialog"
-                          >
-                            <span className="thumb">
-                              <span className="thumbInner">
-                                <Image
-                                  src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-021.jpg"
-                                  alt=""
-                                  width={800}
-                                  height={636}
-                                />
-                              </span>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-022.jpg"
-                            title=""
-                            aria-label="Image, Opens dialog"
-                          >
-                            <span className="thumb">
-                              <span className="thumbInner">
-                                <Image
-                                  src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-022.jpg"
-                                  alt=""
-                                  width={800}
-                                  height={636}
-                                />
-                              </span>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-023.jpg"
-                            title=""
-                            aria-label="Image, Opens dialog"
-                          >
-                            <span className="thumb">
-                              <span className="thumbInner">
-                                <Image
-                                  src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-023.jpg"
-                                  alt=""
-                                  width={800}
-                                  height={636}
-                                />
-                              </span>
-                            </span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                    <SlideShow
+                        images={[
+                          {
+                            src: '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0014.jpg',
+                            alt: '',
+                            width: 800,
+                            height: 646
+                          },
+                          {
+                            src: '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0015.jpg',
+                            alt: '',
+                            width: 800,
+                            height: 631
+                          },
+                          {
+                            src: '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0016.jpg',
+                            alt: '',
+                            width: 800,
+                            height: 636
+                          },
+                          {
+                            src: '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0017.jpg',
+                            alt: '',
+                            width: 800,
+                            height: 636
+                          },
+                          {
+                            src: '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0018.jpg',
+                            alt: '',
+                            width: 800,
+                            height: 649
+                          },
+                          {
+                            src: '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-020.jpg',
+                            alt: '',
+                            width: 800,
+                            height: 636
+                          },
+                          {
+                            src: '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-021.jpg',
+                            alt: '',
+                            width: 800,
+                            height: 636
+                          },
+                          {
+                            src: '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-022.jpg',
+                            alt: '',
+                            width: 800,
+                            height: 636
+                          },
+                          {
+                            src: '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-023.jpg',
+                            alt: '',
+                            width: 800,
+                            height: 636
+                          },
+                        ]}
+                    />
                   </div>
                 </div>
                 <div className="col col-sm-12 col-md-1 hidden-sm hidden-md flexCol">

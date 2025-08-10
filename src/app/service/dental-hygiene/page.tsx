@@ -1,5 +1,5 @@
 import React from 'react';
-import PhilipsAd from "@app/frag/philipsAd";
+import PhilipsAd from "@components/PhilipsAd";
 
 export default function DentalHygienePage() {
     return (

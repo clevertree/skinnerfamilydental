@@ -12,7 +12,7 @@ export default function EmergencyDentistryPage() {
                             <div id="c3294" className="col col-lg-10 col-md-10 col-sm-12">
                                 <div id="m3261" className="module text">
                                     <h1 className="spottext" style={{textAlign: "center"}}>
-                                        Sedation Dentistry
+                                        Emergency Dentistry
                                     </h1>
                                 </div>
                             </div>

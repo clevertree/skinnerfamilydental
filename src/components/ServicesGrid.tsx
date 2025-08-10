@@ -49,7 +49,7 @@ const ServicesGrid: React.FC = () => (
                         <AnimationWrapper method='zoom-in'>
                             <a href={service.href} className="imageModuleWrap" style={{}}>
                                 <img src={service.img} alt={service.title} width={150} height={150}
-                                     className="module image m-auto"/>
+                                     className="module image m-auto rounded-3xl"/>
                             </a>
                         </AnimationWrapper>
                         <div className="module text">

@@ -1,7 +1,7 @@
 "use client";
 import {Button} from "@mui/material";
 import React, {useState} from "react";
-import styles from "./ResponsiveMenu.module.css"
+import styles from "./ResponsiveMenu.module.scss"
 
 interface ResponsiveMenuProps {
     children: React.ReactNode;
@@ -14,7 +14,7 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({children}) => {
     return (
         <nav tabIndex={-1} className="w-full">
             {/* Desktop/Tablet */}
-            <ul className="hidden lg:flex flex-row gap-6 [&_ul]:py-4 justify-end [&_ul]:bg-gray-100">
+            <ul className={"hidden lg:flex flex-row gap-6 py-4 justify-end " + styles.menuDesktop}>
                 {children}
             </ul>
             {/* Mobile */}
@@ -36,7 +36,7 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({children}) => {
                 )}
                 {/* Sliding Menu */}
                 <div
-                    className={`fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg transform transition-transform duration-300 ${styles.menu} ${open ? styles.menuOpen : styles.menuClose}`}
+                    className={`fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg transform transition-transform duration-300 ${styles.menuMobile} ${open ? styles.menuOpen : styles.menuClose}`}
                 >
                     <div className='absolute right-0'>
                         <Button

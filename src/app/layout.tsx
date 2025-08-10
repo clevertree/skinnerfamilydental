@@ -4,6 +4,8 @@ import Script from 'next/script';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import NavLink from '@components/Navigation/NavLink';
+import ResponsiveMenu from "@components/Navigation/ResponsiveMenu";
 
 export const metadata: Metadata = {
     title: 'Stephanie L. Skinner D.M.D. Family Dentistry | Savannah, GA',
@@ -70,7 +72,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                         <div id="m1475" className="module autospacer"></div>
                         <div className="flexWrap">
                             <div id="m1408" className="module text"><p className="custom1" style={{textAlign: 'right'}}>
-                                <a href="/contact" data-track-event="click" data-track-action="internal_link_clicked">MAKE
+                                <a href="/contact" data-track-action="internal_link_clicked">MAKE
                                     APPOINTMENT</a></p></div>
                         </div>
                     </div>
@@ -78,7 +80,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                         <div id="m2892" className="module autospacer"></div>
                         <div className="flexWrap">
                             <div id="m1353" className="module text"><p className="custom1"><a href="tel:+19129256613"
-                                                                                              data-track-event="click"
+
                                                                                               data-track-action="phone_link"><span
                                 className="iconfont">&#9990;</span> (912) 925-6613</a></p></div>
                         </div>
@@ -92,7 +94,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                         <div id="m3175" className="module autospacer"></div>
                         <div className="flexWrap">
                             <Link href="/" title="" aria-label="" className="imageModuleWrap" id="w_m3130"
-                                  data-track-event="click" data-track-action="internal_link_clicked">
+                                  data-track-action="internal_link_clicked">
                                 <Image src="/uploads/imgs/colorlogo-e1549412436478.png"
                                        alt="Stephanie L. Skinner Family Dental Logo" width={200} height={119} priority/>
                             </Link>
@@ -102,49 +104,41 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                     <div id="c4354" className="col col-sm-6 col-lg-9 col-md-9 flexCol">
                         <div id="m4218" className="module autospacer"></div>
                         <div className="flexWrap">
-                            <nav id="m5000" className="module nav" aria-label="Navigation" tabIndex={-1}>
-                                <ul className="navContainer">
-                                    <li className="active"><Link href="/" data-track-event="click"
-                                                                 data-track-action="internal_link_clicked">HOME</Link>
+                            <ResponsiveMenu>
+                                <li><NavLink href="/">HOME</NavLink>
                                     </li>
-                                    <li><Link href="/meet-the-team" data-track-event="click"
-                                              data-track-action="internal_link_clicked">MEET THE TEAM</Link></li>
-                                    <li><Link href="/service" data-track-event="click"
-                                              data-track-action="internal_link_clicked">SERVICE</Link>
-                                        <ul>
-                                            <li><Link href="/service/dental-hygiene" data-track-event="click"
-                                                      data-track-action="internal_link_clicked">Dental Hygiene</Link>
+                                <li><NavLink href="/meet-the-team">MEET THE TEAM</NavLink>
+                                </li>
+                                <li><NavLink href="/service">SERVICE</NavLink>
+                                    <ul className="flex flex-col gap-4 px-4">
+                                        <li><NavLink href="/service/dental-hygiene">Dental
+                                            Hygiene</NavLink>
                                             </li>
-                                            <li><Link href="/service/dental-fillings-and-crowns"
-                                                      data-track-event="click"
-                                                      data-track-action="internal_link_clicked">Dental Fillings and
-                                                Crowns</Link></li>
-                                            <li><Link href="/service/cosmetic-implants" data-track-event="click"
-                                                      data-track-action="internal_link_clicked">Cosmetic Implants</Link>
+                                        <li><NavLink href="/service/dental-fillings-and-crowns"
+                                        >Dental Fillings and
+                                            Crowns</NavLink></li>
+                                        <li><NavLink href="/service/cosmetic-implants">Cosmetic
+                                            Implants</NavLink>
                                             </li>
-                                            <li><Link href="/service/full-and-partial-dentures" data-track-event="click"
-                                                      data-track-action="internal_link_clicked">Full and Partial
-                                                Dentures</Link></li>
-                                            <li><Link href="/service/sedation-dentistry" data-track-event="click"
-                                                      data-track-action="internal_link_clicked">Sedation
-                                                Dentistry</Link></li>
-                                            <li><Link href="/service/emergency-dentistry" data-track-event="click"
-                                                      data-track-action="internal_link_clicked">Emergency
-                                                Dentistry</Link></li>
-                                            <li><Link href="/service/paperwork" data-track-event="click"
-                                                      data-track-action="internal_link_clicked">Patient Paperwork</Link>
+                                        <li><NavLink href="/service/full-and-partial-dentures"
+                                        >Full and Partial
+                                            Dentures</NavLink></li>
+                                        <li><NavLink href="/service/sedation-dentistry">Sedation
+                                            Dentistry</NavLink></li>
+                                        <li><NavLink href="/service/emergency-dentistry">Emergency
+                                            Dentistry</NavLink></li>
+                                        <li><NavLink href="/service/paperwork">Patient
+                                            Paperwork</NavLink>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><Link href="/the-office" data-track-event="click"
-                                              data-track-action="internal_link_clicked">THE OFFICE</Link></li>
-                                    <li className="hidden"><Link href="/blog" data-track-event="click"
-                                                                 data-track-action="internal_link_clicked">BLOG</Link>
+                                <li><NavLink href="/the-office">THE OFFICE</NavLink></li>
+                                <li className="hidden">
+                                    <NavLink href="/blog"
+                                             data-track-action="internal_link_clicked">BLOG</NavLink>
                                     </li>
-                                    <li><Link href="/contact" data-track-event="click"
-                                              data-track-action="internal_link_clicked">CONTACT</Link></li>
-                                </ul>
-                            </nav>
+                                <li><NavLink href="/contact">CONTACT</NavLink></li>
+                            </ResponsiveMenu>
                         </div>
                         <div id="m4149" className="module autospacer"></div>
                     </div>

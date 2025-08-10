@@ -6,6 +6,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import NavLink from '@components/Navigation/NavLink';
 import ResponsiveMenu from "@components/Navigation/ResponsiveMenu";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCaretDown, faPhone} from '@fortawesome/free-solid-svg-icons'; // Import specific icons as needed
 
 export const metadata: Metadata = {
     title: 'Stephanie L. Skinner D.M.D. Family Dentistry | Savannah, GA',
@@ -77,14 +79,13 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                         </div>
                     </div>
                     <div id="c2268" className="col col-lg-2 col-md-3 col-sm-5 flexCol">
-                        <div id="m2892" className="module autospacer"></div>
-                        <div className="flexWrap">
-                            <div id="m1353" className="module text"><p className="custom1"><a href="tel:+19129256613"
-
-                                                                                              data-track-action="phone_link"><span
-                                className="iconfont">&#9990;</span> (912) 925-6613</a></p></div>
-                        </div>
-                        <div id="m1535" className="module autospacer"></div>
+                        <a
+                            className="text leading-[1.1em] text-xl text-right font-extrabold flex items-center justify-center"
+                            href="tel:+19129256613"
+                            data-track-action="phone_link">
+                            <FontAwesomeIcon width={18} height={18} icon={faPhone} className='mr-2'/>
+                            <span>(912) 925-6613</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -109,7 +110,12 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                                     </li>
                                 <li><NavLink href="/meet-the-team">MEET THE TEAM</NavLink>
                                 </li>
-                                <li><NavLink href="/service">SERVICE</NavLink>
+                                <li><NavLink href="/service">
+                                    SERVICE
+                                    <FontAwesomeIcon width={12} height={12}
+                                                     icon={faCaretDown}
+                                                     className='ml-2'/>
+                                </NavLink>
                                     <ul>
                                         <li><NavLink href="/service/dental-hygiene">Dental
                                             Hygiene</NavLink>
@@ -205,7 +211,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                         <a rel="nofollow noopener"
                            className='font-bold'
                            href="mailto:ari@asu.edu" target="_blank">
-                            Ari Asulin
+                            Ari
                         </a>
                     </p>
                 </div>

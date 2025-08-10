@@ -1,0 +1,45 @@
+.menuMobile {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-in;
+    transform-origin: center center;
+}
+
+.menuDesktop {
+    li:not(:hover) > ul {
+        display: none;
+    }
+
+    li > ul {
+        cursor: pointer;
+        position: absolute;
+        z-index: 9;
+        margin: 0 0 0 -1.1rem;
+        padding: 0;
+        background-color: #f1f1f1;
+
+        :hover {
+            background-color: #c2c2c2;
+
+        }
+
+        li {
+
+            border-bottom: 1px solid #FFF;
+            padding: 1rem 1.2rem;
+            margin: 0;
+            list-style: none;
+        }
+    }
+}
+
+.menuOpen {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menuClose {
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen to the right */
+}
+

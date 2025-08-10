@@ -125,6 +125,14 @@
             </PendingDiffInfo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/components/TestimonyCarousel.tsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/components/TestimonyCarousel.tsx" />
+              <option name="updatedContent" value="import React from &quot;react&quot;;&#10;import Carousel from &quot;react-material-ui-carousel&quot;;&#10;import { Paper } from &quot;@mui/material&quot;;&#10;&#10;const testimonies = [&#10;  {&#10;    text: `I have been with Dr. Skinner for years. I really don't like going to the dentist until I went to this office. Her entire staff is wonderful and Dr. Skinner is phenomenal. I had been to two other dentists and am so fortunate that I found such a great one with Dr. Skinner and her staff.`,&#10;    author: &quot;Jo Ann&quot;,&#10;  },&#10;  {&#10;    text: `Mrs. Lori is the BEST! I've been going to her for years! We have the best conversations! Such a sweet and kind person! And Mrs. Toni is Awesome! She always finds a way to fit me in when I have to reschedule! It's a pleasure being a client at such a great establishment! The whole staff is great!`,&#10;    author: &quot;Jenna P&quot;,&#10;  },&#10;  {&#10;    text: `I love Dr. Skinner and the staff at the office, have been going for years and my family and I have always had the very best of care! I trust her and recommend her and her staff very highly ???`,&#10;    author: &quot;Patty B&quot;,&#10;  },&#10;];&#10;&#10;const TestimonyCarousel: React.FC = () =&gt; (&#10;  &lt;div className=&quot;my-8&quot;&gt;&#10;    &lt;Carousel&#10;      autoPlay&#10;      interval={7000}&#10;      indicators={true}&#10;      navButtonsAlwaysInvisible={false}&#10;      animation=&quot;slide&quot;&#10;    &gt;&#10;      {testimonies.map((item, idx) =&gt; (&#10;        &lt;Paper key={idx} elevation={3} className=&quot;p-8 bg-white max-w-2xl mx-auto&quot;&gt;&#10;          &lt;p className=&quot;lightpreamble text-center mb-4&quot;&gt;{item.text}&lt;/p&gt;&#10;          &lt;p className=&quot;lightpreamble text-center font-bold&quot;&gt;{item.author}&lt;/p&gt;&#10;        &lt;/Paper&gt;&#10;      ))}&#10;    &lt;/Carousel&gt;&#10;  &lt;/div&gt;&#10;);&#10;&#10;export default TestimonyCarousel;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/tailwind.config.js">
           <value>
             <PendingDiffInfo>

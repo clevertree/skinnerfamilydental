@@ -17,7 +17,7 @@ export default function HomePageSlideShow() {
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-        }, 9000); // Change slide every 9 seconds
+        }, 6000); // Change slide every 9 seconds
         return () => clearInterval(timer);
     }, [slides.length]);
 

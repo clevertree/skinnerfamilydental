@@ -110,7 +110,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                                 <li><NavLink href="/meet-the-team">MEET THE TEAM</NavLink>
                                 </li>
                                 <li><NavLink href="/service">SERVICE</NavLink>
-                                    <ul className="flex flex-col gap-4 px-4">
+                                    <ul>
                                         <li><NavLink href="/service/dental-hygiene">Dental
                                             Hygiene</NavLink>
                                             </li>
@@ -203,6 +203,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                     <p>
                         Managed by{' '}
                         <a rel="nofollow noopener"
+                           className='font-bold'
                            href="mailto:ari@asu.edu" target="_blank">
                             Ari Asulin
                         </a>

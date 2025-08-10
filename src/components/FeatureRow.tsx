@@ -1,16 +1,23 @@
 import React from 'react';
 import AnimationWrapper from "@components/Animation/AnimationWrapper";
+import Image from "next/image";
 
 interface FeatureRowProps {
-    headline: string;
-    body: string;
-    buttonText: string;
-    buttonHref: string;
+    headline: string,
+    body: string,
+    buttonText: string,
+    buttonHref: string,
+    imgSrc: string,
+    className?: string
+    reverse?: boolean,
 }
 
-const FeatureRow: React.FC<FeatureRowProps> = ({headline, body, buttonText, buttonHref}) => (
-    <div className="row ">
-        <div className="container container-fixed">
+const FeatureRow: React.FC<FeatureRowProps> = ({
+                                                   headline, body, buttonText, buttonHref, imgSrc,
+                                                   className = "", reverse = false
+                                               }) => (
+    <div className={className + " row"}>
+        <div className={`flex flex-col md:flex-row ${reverse ? "md:flex-row-reverse " : ""}`}>
             <div className="col col-sm-12 col-md-6 col-lg-6 flexCol">
                 <div className="module autospacer"/>
                 <div className="flexWrap">
@@ -28,8 +35,9 @@ const FeatureRow: React.FC<FeatureRowProps> = ({headline, body, buttonText, butt
                 </div>
                 <div className="module autospacer"/>
             </div>
-            <div className="col col-sm-12 col-md-6 col-lg-6 flexCol">
+            <div className="col col-sm-12 col-md-6 col-lg-6 flexCol min-h-64">
                 <div className="module autospacer"/>
+                <Image src={imgSrc} alt={imgSrc} fill objectFit='cover'/>
             </div>
         </div>
     </div>

@@ -1,5 +1,10 @@
 import React from 'react';
 import PhilipsAd from "@components/PhilipsAd";
+import type {Metadata} from 'next';
+
+export const metadata: Metadata = {
+    title: 'Emergency Dentistry | Stephanie L. Skinner D.M.D. Family Dentistry',
+};
 
 export default function EmergencyDentistryPage() {
     return (
@@ -90,4 +95,3 @@ export default function EmergencyDentistryPage() {
         </div>
     );
 }
-

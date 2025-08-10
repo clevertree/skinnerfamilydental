@@ -45,9 +45,11 @@ function ContactForm({sendForm}: ContactFormProps) {
             setMessage([response.success ? 'success' : 'warning', response.message]);
             if (response.success)
                 setStatus('submitted');
-        } catch (e: any) {
-            setMessage(['error', e.message]);
-            setStatus('ready');
+        } catch (e: unknown) {
+            if (e instanceof Error) {
+                setMessage(['error', e.message]);
+                setStatus('ready');
+            }
         }
     };
 

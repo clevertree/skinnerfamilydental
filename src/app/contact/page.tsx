@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactForm from "@components/Forms/ContactForm";
 import {sendContactFormEmail} from "../../actions/emailActions";
+import {Typography} from "@mui/material";
 
 export default function ContactPage() {
     return (
@@ -56,6 +57,11 @@ export default function ContactPage() {
                                     </p></div>
                                 </div>
                                 <div id="c3355" className="col col-md-6 col-sm-12 col-lg-6">
+                                    <Typography variant="h6" className="bodytext" gutterBottom>
+                                        Contact our dental office in Savannah, GA, to schedule an appointment for
+                                        routine cleanings or emergency
+                                        services today.
+                                    </Typography>
                                     <ContactForm sendForm={sendContactFormEmail}/>
                                 </div>
                             </div>

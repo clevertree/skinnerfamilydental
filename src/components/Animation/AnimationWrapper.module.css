@@ -3,7 +3,7 @@
 
 
 .animation {
-    /*display: inline-block;*/
+    display: inline-block;
     transition: transform 0.5s ease-out, opacity 0.5s ease-in;
     transform-origin: center center; /* Ensures scaling from the center */
     /*opacity: 1;*/

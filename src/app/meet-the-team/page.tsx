@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MeetTheTeamPage() {
     return (
-        <div id="r5002" role="main" className="row designRow">
+        <div id="r5002" className="row designRow">
             <div id='p5754' className="container container-fluid">
                 <div className="col col-sm-12">
                     <div id="r2376" className="row bgfilter">

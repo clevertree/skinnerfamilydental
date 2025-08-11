@@ -5,7 +5,7 @@ import {sendContactFormEmail} from "../../actions/emailActions";
 export default function ContactPage() {
     return (
         <div>
-            <div id="r5002" role="main" className="row designRow">
+            <div id="r5002" className="row designRow">
                 <div id="p6792" className="container container-fluid">
                     <div className="col col-sm-12">
                         <div id="r1041" className="row bgfilter">

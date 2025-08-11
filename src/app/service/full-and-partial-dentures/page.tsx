@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function FullAndPartialDenturesPage() {
     return (
-        <div id="r5002" role="main" className="row designRow">
+        <div id="r5002" className="row designRow">
             <div id="p9401" className="container container-fluid">
                 <div className="col col-sm-12">
                     <div id="r2801" className="row bgfilter">

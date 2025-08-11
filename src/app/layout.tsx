@@ -151,9 +151,9 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                 </div>
             </div>
         </header>
-        <main id="main-content">{children}</main>
+        <main id="main-content" aria-label="Page Content">{children}</main>
         {/* Footer Section */}
-        <footer>
+        <footer aria-label="Site Footer">
             <div id="r1074" className="row ">
                 <div className="container container-fixed colsStack">
                     <div id="c3869" className="col col-sm-12 col-lg-4 col-md-6">
@@ -196,6 +196,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                                 loading="lazy"
                                 allowFullScreen
                                 referrerPolicy="no-referrer-when-downgrade"
+                                title="Google Maps location"
                                 src={"https://www.google.com/maps/embed/v1/place?key=" + process.env.GOOGLE_API_KEY + "&q=" + encodeURIComponent(process.env.BUSINESS_ADDRESS || '')}>
                             </iframe>
                         </div>
@@ -203,7 +204,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                 </div>
             </div>
         </footer>
-        <div className="row brandfooter">
+        <section className="row brandfooter" role="contentinfo" aria-label="Brand Footer">
             <div className="container container-">
                 <div className="col col-sm-12 text-left">
                     <p>
@@ -216,7 +217,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
         </body>
         </html>
     );

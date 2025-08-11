@@ -13,11 +13,11 @@ const serviceOptions = [
 ];
 
 export interface ContactFormProps {
-    sendForm(formData: UserContactFormEmailData): Promise<{ success: boolean; message: string }>;
+    sendForm(formData: UserContactFormEmailData): Promise<{ status: 'success' | 'error'; message: string }>;
 }
 
 function ContactForm({sendForm}: ContactFormProps) {
-    const [status, setStatus] = useState<'ready' | 'submitting' | 'submitted'>('ready');
+    const [status, setStatus] = useState<'ready' | 'submitting' | 'success' | 'error'>('ready');
     const [message, setMessage] = useState<[AlertColor, string]>(['info', 'Please submit this form to contact the office.']);
 
     const [formData, setFormData] = useState<UserContactFormEmailData>({
@@ -41,10 +41,9 @@ function ContactForm({sendForm}: ContactFormProps) {
         e.preventDefault();
         setStatus('submitting');
         try {
-            const response = await sendForm(formData)
-            setMessage([response.success ? 'success' : 'warning', response.message]);
-            if (response.success)
-                setStatus('submitted');
+            const {status, message} = await sendForm(formData)
+            setMessage([status, message]);
+            setStatus(status);
         } catch (e: unknown) {
             if (e instanceof Error) {
                 setMessage(['error', e.message]);

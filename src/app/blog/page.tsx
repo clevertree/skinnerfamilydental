@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <div>
-      <div id="r5002" role="main" className="row designRow">
+      <div id="r5002" className="row designRow">
         <div className="container container-fluid">
           <div className="col col-sm-12">
             <div id="r1474" className="row bgfilter">

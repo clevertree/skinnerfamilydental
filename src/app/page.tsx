@@ -1,5 +1,4 @@
 import React from 'react';
-import SlideshowDots from '@components/SlideshowDots';
 import PromoBanner from '@components/PromoBanner';
 import ServicesGrid from '@components/ServicesGrid';
 import FeatureRow from '@components/FeatureRow';
@@ -10,14 +9,9 @@ import TestimonyCarousel from "@components/TestimonyCarousel";
 export default function HomePage() {
     return (
         <>
-            <div id="r5002" role="main" className="row designRow">
+            <div id="r5002" className="row designRow">
                 <div id='p9533' className="container container-fluid">
                     <div className="col col-sm-12">
-                        <div id="r6802" className="rowGroup" data-req="rowgroup"
-                             data-rowgroupsettings="auto=true,dots=true,pause=true" data-arrow-before="Before"
-                             data-arrow-after="After">
-                            <SlideshowDots/>
-                        </div>
                         <HomePageSlideShow/>
                         <PromoBanner/>
                         <ServicesGrid/>

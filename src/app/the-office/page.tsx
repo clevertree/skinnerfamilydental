@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function TheOfficePage() {
   return (
     <div>
-      <div id="r5002" role="main" className="row designRow">
+        <div id="r5002" className="row designRow">
         <div id='p8016' className="container container-fluid">
           <div className="col col-sm-12">
             <div id="r4243" className="row bgfilter">

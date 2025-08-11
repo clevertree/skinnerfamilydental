@@ -471,22 +471,16 @@ body a:hover {
 }
 
 .button2 {
+    display: inline-flex;
     line-height: 1em;
     margin-bottom: 30px;
-    border-radius: 3px;
     color: rgb(87, 87, 87);
     margin-right: auto;
-    padding-top: 19px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    padding-left: 30px;
+    padding: 19px 30px 20px;
     border-color: rgba(0, 0, 0, 0.6);
     background-color: #e3ca98;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    font-family: Open Sans;
+    border-radius: 0px;
+    font-family: Open Sans, serif;
 }
 
 .button2:hover {

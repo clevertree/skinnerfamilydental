@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function DentalFillingsAndCrownsPage() {
   return (
     <div>
-      <div id="r5002" role="main" className="row designRow">
+      <div id="r5002" className="row designRow">
         <div id='p9775' className="container container-fluid">
           <div className="col col-sm-12">
             <div id="r2801" className="row bgfilter">
@@ -49,7 +49,9 @@ export default function DentalFillingsAndCrownsPage() {
                   <div className="flexWrap">
                     <div id="m1549" className="module video ">
                       <div className="cookieconsent-optin-marketing mono-video-wrapper">
-                        <iframe id='player_m1549' title='Video' src='https://www.youtube.com/embed/Qr6CpCBnLCQ?enablejsapi=1&playerapiid=player_m1549' style={{ border: 0 }} allowFullScreen />
+                        <iframe id='player_m1549' title='Dental Bridge Video'
+                                src='https://www.youtube.com/embed/Qr6CpCBnLCQ?enablejsapi=1&playerapiid=player_m1549'
+                                style={{border: 0}} allowFullScreen/>
                       </div>
                     </div>
                   </div>
@@ -64,7 +66,9 @@ export default function DentalFillingsAndCrownsPage() {
                   <div className="flexWrap">
                     <div id="m3787" className="module video ">
                       <div className="cookieconsent-optin-marketing mono-video-wrapper">
-                        <iframe id='player_m3787' title='Video' src='https://www.youtube.com/embed/ZRcY7YCzv1U?enablejsapi=1&playerapiid=player_m3787' style={{ border: 0 }} allowFullScreen />
+                        <iframe id='player_m3787' title='Root Canal Therapy Video'
+                                src='https://www.youtube.com/embed/ZRcY7YCzv1U?enablejsapi=1&playerapiid=player_m3787'
+                                style={{border: 0}} allowFullScreen/>
                       </div>
                     </div>
                   </div>

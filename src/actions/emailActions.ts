@@ -22,17 +22,21 @@ const transporter = nodemailer.createTransport({
 
 export async function sendContactFormEmail(formData: UserContactFormEmailData) {
     const template = UserContactFormEmail(formData);
-    return sendMail(template);
+    const {status, message} = await sendMail(template);
+    return {
+        status,
+        message: status ? "Thank you for your request. You will hear from us shortly" : `Error sending contact form: ${message}`,
+    }
 }
 
 export async function sendMail(options: Mail.Options) {
     const email = `${options.to}`;
     const subject = `${options.subject}`;
     if (!email) {
-        return {success: false, message: `Invalid recipient email: ${JSON.stringify(options)}`};
+        return {status: 'error', message: `Invalid recipient email: ${JSON.stringify(options)}`};
     }
     if (!subject) {
-        return {success: false, message: `Invalid subject: ${JSON.stringify(options)}`};
+        return {status: 'error', message: `Invalid subject: ${JSON.stringify(options)}`};
     }
 
     const isVerified = await transporter.verify();
@@ -50,9 +54,9 @@ export async function sendMail(options: Mail.Options) {
     }
 
     return {
-        success: true,
+        status: 'success',
         message: testMode
-            ? `Email sent: ${subject}`
-            : `TEST MODE: ${subject}`,
+            ? `TEST MODE: ${subject}`
+            : `Email sent: ${subject}`,
     };
 }

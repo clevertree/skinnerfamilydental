@@ -5,7 +5,7 @@ export default function CosmeticImplantsPage() {
     return (
         <div>
             {/* TODO: Add converted content from service/cosmetic-implants.html here */}
-            <div id="r5002" role="main" className="row designRow">
+            <div id="r5002" className="row designRow">
                 <div id='p7799' className="container container-fluid">
                     <div className="col col-sm-12">
                         <div id="r2801" className="row bgfilter">
@@ -51,7 +51,7 @@ export default function CosmeticImplantsPage() {
                                     <div className="flexWrap">
                                         <div id="m1105" className="module video ">
                                             <div className="cookieconsent-optin-marketing mono-video-wrapper">
-                                                <iframe id='player_m1105' title='Video'
+                                                <iframe id='player_m1105' title='Dental Implants Video'
                                                         src='https://www.youtube.com/embed/HZHS2miPqAk?enablejsapi=1&playerapiid=player_m1105'
                                                         style={{border: 0}} allowFullScreen/>
                                             </div>
@@ -69,7 +69,7 @@ export default function CosmeticImplantsPage() {
                                     <div className="flexWrap">
                                         <div id="m3896" className="module video ">
                                             <div className="cookieconsent-optin-marketing mono-video-wrapper">
-                                                <iframe id='player_m3896' title='Video'
+                                                <iframe id='player_m3896' title='CEREC Dental Technology Video'
                                                         src='https://www.youtube.com/embed/0KRXPjJGO_o?enablejsapi=1&playerapiid=player_m3896'
                                                         style={{border: 0}} allowFullScreen/>
                                             </div>
@@ -80,8 +80,6 @@ export default function CosmeticImplantsPage() {
                                     <div id="m3882" className="module autospacer"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="r4222" className="row ">
                             <div className="container container-fixed">
                                 <PhilipsAd/>
                             </div>

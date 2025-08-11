@@ -7,7 +7,9 @@
     "build": "next build",
     "build-start": "next build; next start;",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix",
+    "test:e2e": "cypress run",
+    "test:open": "cypress open"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
@@ -29,6 +31,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
+    "cypress": "^14.5.4",
+    "cypress-axe": "^1.6.0",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
     "postcss": "^8",

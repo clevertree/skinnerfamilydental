@@ -3,7 +3,7 @@ import PhilipsAd from "@components/PhilipsAd";
 
 export default function SedationDentistryPage() {
     return (
-        <div id="r5002" role="main" className="row designRow">
+        <div id="r5002" className="row designRow">
             <div id='p5774' className="container container-fluid">
                 <div className="col col-sm-12">
                     <div id="r2801" className="row bgfilter">

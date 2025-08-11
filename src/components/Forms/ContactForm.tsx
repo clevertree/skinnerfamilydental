@@ -1,8 +1,9 @@
 'use client'
 
 import React, {useState} from "react";
-import {Alert, AlertColor, Box, Button, MenuItem, TextField, Typography} from "@mui/material";
+import {Alert, AlertColor, Box, Button, MenuItem, TextField} from "@mui/material";
 import {UserContactFormEmailData} from "@template/email/UserContactForm";
+import {MailResult} from "../../actions/emailActions";
 
 const serviceOptions = [
     "Cleaning",
@@ -13,7 +14,7 @@ const serviceOptions = [
 ];
 
 export interface ContactFormProps {
-    sendForm(formData: UserContactFormEmailData): Promise<{ status: 'success' | 'error'; message: string }>;
+    sendForm(formData: UserContactFormEmailData): Promise<MailResult>;
 }
 
 function ContactForm({sendForm}: ContactFormProps) {
@@ -54,10 +55,6 @@ function ContactForm({sendForm}: ContactFormProps) {
 
     return (
         <Box>
-            <Typography variant="h6" className="bodytext" gutterBottom>
-                Contact our dental office in Savannah, GA, to schedule an appointment for routine cleanings or emergency
-                services today.
-            </Typography>
             {message && message[1] && (
                 <Alert severity={message[0]}>
                     {message[1]}

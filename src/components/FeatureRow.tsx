@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import AnimationWrapper from "@components/Animation/AnimationWrapper";
 
 interface FeatureRowProps {
     headline: string,
@@ -26,11 +27,11 @@ const FeatureRow: React.FC<FeatureRowProps> = ({
                     <div className="module text">
                         <p className="bodytext">{body}</p>
                     </div>
-                    {/*<AnimationWrapper method='zoom-in'>*/}
-                    <a className="button2" href={buttonHref} role="button">
-                            <span className="buttonLabel labelRight">{buttonText}</span>
+                    <AnimationWrapper method='zoom-in'>
+                        <a className="button2 mt-4" href={buttonHref} role="button">
+                            <span className="buttonLabel labelRight font-bold">{buttonText}</span>
                         </a>
-                    {/*</AnimationWrapper>*/}
+                    </AnimationWrapper>
                 </div>
                 <div className="module autospacer"/>
             </div>

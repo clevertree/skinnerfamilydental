@@ -20,7 +20,12 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-export async function sendContactFormEmail(formData: UserContactFormEmailData) {
+export interface MailResult {
+    status: 'success' | 'error';
+    message: string;
+}
+
+export async function sendContactFormEmail(formData: UserContactFormEmailData): Promise<MailResult> {
     const template = UserContactFormEmail(formData);
     const {status, message} = await sendMail(template);
     return {
@@ -29,7 +34,7 @@ export async function sendContactFormEmail(formData: UserContactFormEmailData) {
     }
 }
 
-export async function sendMail(options: Mail.Options) {
+export async function sendMail(options: Mail.Options): Promise<MailResult> {
     const email = `${options.to}`;
     const subject = `${options.subject}`;
     if (!email) {

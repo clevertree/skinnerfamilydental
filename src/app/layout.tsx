@@ -8,6 +8,8 @@ import NavLink from '@components/Navigation/NavLink';
 import ResponsiveMenu from "@components/Navigation/ResponsiveMenu";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCaretDown, faPhone} from '@fortawesome/free-solid-svg-icons'; // Import specific icons as needed
+import '../../public/assets/css/grids.css'
+import '../../public/assets/css/user-style.css'
 
 export const metadata: Metadata = {
     title: 'Stephanie L. Skinner D.M.D. Family Dentistry | Savannah, GA',
@@ -31,9 +33,6 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
             <link rel="preload" href="https://css-fonts.eu.extra-cdn.com/css?family=Roboto:300,500&display=swap"
                   as="style"/>
             <link href="https://css-fonts.eu.extra-cdn.com/css?family=Roboto:300,500&display=swap" rel="stylesheet"/>
-            <link rel="stylesheet" href="/assets/css/grids.css"/>
-            <link rel="stylesheet" href="/assets/css/captcha.css"/>
-            <link rel="stylesheet" href="/assets/css/user-style.css"/>
             <link rel="stylesheet" id="style_site" href="/assets/css/sitestyle.css"/>
             <link rel="stylesheet" href="/assets/css/external-libs.css"/>
             <link rel="preconnect" href="https://fonts.prod.extra-cdn.com/" crossOrigin="anonymous"/>
@@ -71,18 +70,18 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                         <div id="m1346" className="module autospacer"></div>
                     </div>
                     <div id="c3125" className="col col-sm-7 col-lg-6 col-md-7 flexCol">
-                        <div id="m1475" className="module autospacer"></div>
                         <div className="flexWrap">
                             <div id="m1408" className="module text"><p className="custom1" style={{textAlign: 'right'}}>
-                                <a href="/contact" data-track-action="internal_link_clicked">MAKE
+                                <a href="/contact"
+                                   className="text leading-[1.1em] text-xl text-center font-extrabold"
+                                >MAKE
                                     APPOINTMENT</a></p></div>
                         </div>
                     </div>
                     <div id="c2268" className="col col-lg-2 col-md-3 col-sm-5 flexCol">
                         <a
                             className="text leading-[1.1em] text-xl text-right font-extrabold flex items-center justify-center"
-                            href="tel:+19129256613"
-                            data-track-action="phone_link">
+                            href="tel:+19129256613">
                             <FontAwesomeIcon width={18} height={18} icon={faPhone} className='mr-2'/>
                             <span>(912) 925-6613</span>
                         </a>

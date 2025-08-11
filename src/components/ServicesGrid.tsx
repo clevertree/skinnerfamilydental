@@ -44,8 +44,9 @@ const services = [
 const ServicesGrid: React.FC = () => (
     <div id="r2961" className="row ">
         <div className="container container-fluid colsStack">
-            {services.map((service, idx) => (
-                <div key={service.title} className="col col-lg-4 col-md-6 col-sm-12 flexCol">
+            {services.map((service) => (
+                <div key={service.title}
+                     className="col col-lg-4 col-md-6 col-sm-12 flexCol my-4 bg-white border-b-[1px] border-l-[1px] border-gray-200">
                     <div className="text-center">
                         <AnimationWrapper method='zoom-in'>
                             <a href={service.href} className="imageModuleWrap" style={{}}>

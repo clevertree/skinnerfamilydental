@@ -7,11 +7,12 @@ import Image from 'next/image';
 import NavLink from '@components/Navigation/NavLink';
 import ResponsiveMenu from "@components/Navigation/ResponsiveMenu";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCaretDown, faPhone} from '@fortawesome/free-solid-svg-icons'; // Import specific icons as needed
+import {faArrowUpFromBracket, faCaretDown, faPhone} from '@fortawesome/free-solid-svg-icons'; // Import specific icons as needed
 import {faFacebookF} from '@fortawesome/free-brands-svg-icons';
 import '@public/assets/css/grids.css'
 import '@public/assets/css/user-style.css'
 import '@public/assets/css/sitestyle.css'
+import NavReturn from "@components/Navigation/NavReturn";
 // import '../../public/assets/css/external-libs.css'
 
 export const metadata: Metadata = {
@@ -205,6 +206,11 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                 </div>
             </div>
         </section>
+        <NavReturn>
+            <FontAwesomeIcon width={20} height={20}
+                             icon={faArrowUpFromBracket}
+                             className=''/>
+        </NavReturn>
         </body>
         </html>
     );

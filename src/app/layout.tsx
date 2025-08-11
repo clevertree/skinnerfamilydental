@@ -8,8 +8,11 @@ import NavLink from '@components/Navigation/NavLink';
 import ResponsiveMenu from "@components/Navigation/ResponsiveMenu";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCaretDown, faPhone} from '@fortawesome/free-solid-svg-icons'; // Import specific icons as needed
-import '../../public/assets/css/grids.css'
-import '../../public/assets/css/user-style.css'
+import {faFacebookF} from '@fortawesome/free-brands-svg-icons';
+import '@public/assets/css/grids.css'
+import '@public/assets/css/user-style.css'
+import '@public/assets/css/sitestyle.css'
+// import '../../public/assets/css/external-libs.css'
 
 export const metadata: Metadata = {
     title: 'Stephanie L. Skinner D.M.D. Family Dentistry | Savannah, GA',
@@ -33,29 +36,11 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
             <link rel="preload" href="https://css-fonts.eu.extra-cdn.com/css?family=Roboto:300,500&display=swap"
                   as="style"/>
             <link href="https://css-fonts.eu.extra-cdn.com/css?family=Roboto:300,500&display=swap" rel="stylesheet"/>
-            <link rel="stylesheet" id="style_site" href="/assets/css/sitestyle.css"/>
-            <link rel="stylesheet" href="/assets/css/external-libs.css"/>
             <link rel="preconnect" href="https://fonts.prod.extra-cdn.com/" crossOrigin="anonymous"/>
             <style>{`.form input[type=submit] { width: auto !important; }`}</style>
-            <Script id="gtag-base" strategy="afterInteractive"
-                    src="https://www.googletagmanager.com/gtag/js?id=G-LRGFK81PYX"/>
-            <Script id="gtag-config" strategy="afterInteractive">{`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-LRGFK81PYX', {
-            'anonymize_ip': true,
-            'send_page_view': false,
-            'custom_map': {'dimension1': 'monoSiteId', 'dimension2': 'monoRendering'}
-          });
-          gtag('event', 'monoAction', {'monoSiteId': '1234107', 'monoRendering': 'website'});
-          gtag('event', 'page_view', {'monoSiteId': '1234107', 'monoRendering': 'website'});
-        `}</Script>
-            <Script></Script>
             <Script src="/assets/js/animation.js"></Script>
             <Script src="/assets/js/legacy/html5shiv.js"></Script>
             <Script src="/assets/js/legacy/respond.js"></Script>
-            {/* Add other analytics scripts as needed */}
         </head>
         <body id="p9533" data-dateformat="d/m/Y" data-enablefocusindication="true" data-req="lazyload,quicklink">
         <div className="skipNavigation">
@@ -169,7 +154,10 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                             href="mailto:skinnerdmd@comcast.net">skinnerdmd@comcast.net</a></p></div>
                         <ul id="m3472" className="module socialmedia">
                             <li><a href="https://www.facebook.com/sskinnerdentistry" target="_blank" rel="noopener"
-                                   aria-label="facebook"> <span className="fa fa-facebook" aria-hidden="true"></span>
+                                   aria-label="facebook">
+                                <FontAwesomeIcon width={24} height={36}
+                                                 icon={faFacebookF}
+                                                 className='ml-2'/>
                             </a></li>
                         </ul>
                     </div>

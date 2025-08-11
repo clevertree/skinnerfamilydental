@@ -31,6 +31,9 @@
       ],
       "@template/*": [
         "./src/template/*"
+      ],
+      "@public/*": [
+        "./public/*"
       ]
     }
   },

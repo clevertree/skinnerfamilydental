@@ -51,7 +51,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         <header>
             <div id="r3894" className="row ">
                 <div
-                    className="flex flex-col gap-2 sm:gap-8 justify-center sm:flex-row justify-between sm:justify-end items-center">
+                    className="flex flex-col gap-2 sm:gap-8 sm:flex-row justify-between sm:justify-end items-center">
                     <div className="">
                         <p className="text leading-[1.1em] text-xl text-right font-extrabold">
                             <a href="/contact">MAKE APPOINTMENT</a>

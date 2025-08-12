@@ -51,7 +51,7 @@ export default function HomePageSlideShow() {
                         className="md:max-w-[20rem] lg:max-w-[30rem] bg-[#5d829bcc] text-wrap text-white p-6 py-8 md:m-[4rem] md:rounded-md"
                     >
                         <div id="" className="text">
-                            <p className="text-[26px] md:text-[36px] lg:text-[50px] leading-[1.1em] text-left text-white font-extrabold mb-[30px]">
+                            <p className="text-[26px] md:text-[30px] lg:text-[50px] leading-[1.1em] text-left text-white font-extrabold mb-[30px]">
                                 Compassionate Dental Care
                                 <br/>
                                 For the Entire Family
@@ -60,15 +60,14 @@ export default function HomePageSlideShow() {
                         <AnimationWrapper method='zoom-in'>
                             <a
                                 id="m4529"
-                                className="module button2 animated animationDone"
+                                className="button2"
                                 href="/meet-the-team"
                                 title=""
                                 role="button"
                                 data-track-event="click"
                                 data-track-action="internal_link_clicked"
                             >
-                                {" "}
-                                <span className="buttonLabel labelRight">LEARN MORE</span>{" "}
+                                <span className=" font-bold">LEARN MORE</span>
                             </a>
                         </AnimationWrapper>
                     </div>

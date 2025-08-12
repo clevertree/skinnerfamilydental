@@ -50,27 +50,21 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         </div>
         <header>
             <div id="r3894" className="row ">
-                <div className="container container-fixed">
-                    <div id="c2559" className="col col-md-2 col-lg-4 col-sm-1 hidden-sm flexCol">
-                        <div id="m3280" className="module autospacer"></div>
-                        <div id="m1346" className="module autospacer"></div>
+                <div
+                    className="flex flex-col gap-2 sm:gap-8 justify-center sm:flex-row justify-between sm:justify-end items-center">
+                    <div className="">
+                        <p className="text leading-[1.1em] text-xl text-right font-extrabold">
+                            <a href="/contact">MAKE APPOINTMENT</a>
+                        </p>
                     </div>
-                    <div id="c3125" className="col col-sm-7 col-lg-6 col-md-7 flexCol">
-                        <div className="flexWrap">
-                            <div id="m1408" className="module text"><p className="custom1" style={{textAlign: 'right'}}>
-                                <a href="/contact"
-                                   className="text leading-[1.1em] text-xl text-center font-extrabold"
-                                >MAKE
-                                    APPOINTMENT</a></p></div>
-                        </div>
-                    </div>
-                    <div id="c2268" className="col col-lg-2 col-md-3 col-sm-5 flexCol">
-                        <a
-                            className="text leading-[1.1em] text-xl text-right font-extrabold flex items-center justify-center"
-                            href="tel:+19129256613">
-                            <FontAwesomeIcon width={18} height={18} icon={faPhone} className='mr-2'/>
-                            <span>(912) 925-6613</span>
-                        </a>
+                    <div className="">
+                        <p className="text leading-[1.1em] text-xl text-right font-extrabold">
+                            <a
+                                href="tel:+19129256613">
+                                <FontAwesomeIcon width={18} height={18} icon={faPhone} className='mr-2'/>
+                                <span>(912) 925-6613</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -81,7 +75,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                         <div className="flexWrap">
                             <Link href="/" title="" aria-label="" className="imageModuleWrap" id="w_m3130"
                                   data-track-action="internal_link_clicked">
-                                <Image src="/uploads/imgs/colorlogo-e1549412436478.png"
+                                <Image src="/assets/imgs/site-logo.png"
                                        alt="Stephanie L. Skinner Family Dental Logo" width={200} height={119} priority/>
                             </Link>
                         </div>
@@ -92,7 +86,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                         <div className="flexWrap">
                             <ResponsiveMenu>
                                 <li><NavLink href="/">HOME</NavLink>
-                                    </li>
+                                </li>
                                 <li><NavLink href="/meet-the-team">MEET THE TEAM</NavLink>
                                 </li>
                                 <li><NavLink href="/service">
@@ -104,13 +98,13 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                                     <ul>
                                         <li><NavLink href="/service/dental-hygiene">Dental
                                             Hygiene</NavLink>
-                                            </li>
+                                        </li>
                                         <li><NavLink href="/service/dental-fillings-and-crowns"
                                         >Dental Fillings and
                                             Crowns</NavLink></li>
                                         <li><NavLink href="/service/cosmetic-implants">Cosmetic
                                             Implants</NavLink>
-                                            </li>
+                                        </li>
                                         <li><NavLink href="/service/full-and-partial-dentures"
                                         >Full and Partial
                                             Dentures</NavLink></li>
@@ -120,14 +114,14 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                                             Dentistry</NavLink></li>
                                         <li><NavLink href="/service/paperwork">Patient
                                             Paperwork</NavLink>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li><NavLink href="/the-office">THE OFFICE</NavLink></li>
                                 <li className="hidden">
                                     <NavLink href="/blog"
                                              data-track-action="internal_link_clicked">BLOG</NavLink>
-                                    </li>
+                                </li>
                                 <li><NavLink href="/contact">CONTACT</NavLink></li>
                             </ResponsiveMenu>
                         </div>

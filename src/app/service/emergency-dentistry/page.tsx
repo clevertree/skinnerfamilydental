@@ -1,10 +1,9 @@
 import React from 'react';
 import PhilipsAd from "@components/PhilipsAd";
 import type {Metadata} from 'next';
+import {buildMetaData} from "@util/metadata";
 
-export const metadata: Metadata = {
-    title: 'Emergency Dentistry | Stephanie L. Skinner D.M.D. Family Dentistry',
-};
+export const metadata: Metadata = buildMetaData("Emergency Dentistry");
 
 export default function EmergencyDentistryPage() {
     return (

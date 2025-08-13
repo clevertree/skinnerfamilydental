@@ -1,5 +1,10 @@
 import React from 'react';
 import PhilipsAd from "@components/PhilipsAd";
+import {Metadata} from "next";
+import {buildMetaData} from "@util/metadata";
+
+export const metadata: Metadata = buildMetaData("Cosmetic Implants");
+
 
 export default function CosmeticImplantsPage() {
     return (

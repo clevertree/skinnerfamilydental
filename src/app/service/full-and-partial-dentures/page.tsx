@@ -1,10 +1,9 @@
 import React from 'react';
 import PhilipsAd from "@components/PhilipsAd";
 import type {Metadata} from 'next';
+import {buildMetaData} from "@util/metadata";
 
-export const metadata: Metadata = {
-    title: 'Full and Partial Dentures | Stephanie L. Skinner D.M.D. Family Dentistry',
-};
+export const metadata: Metadata = buildMetaData("Full and Partial Dentures");
 
 export default function FullAndPartialDenturesPage() {
     return (

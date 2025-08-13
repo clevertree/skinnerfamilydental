@@ -5,37 +5,37 @@ import Image from "next/image";
 const services = [
     {
         href: "/service",
-        img: "/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0051.jpg",
+        img: "/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-0051.jpg",
         title: "General Dentistry",
         desc: "We are a complete family dental practice offering dentistry to children and adults of all ages."
     },
     {
         href: "/service",
-        img: "/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0053.jpg",
+        img: "/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-0053.jpg",
         title: "Hygiene & Whitening",
         desc: "Our dental hygienists consult with each patient to educate you on proper dental habits."
     },
     {
         href: "/service",
-        img: "/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0054.jpg",
+        img: "/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-0054.jpg",
         title: "Emergency Care",
         desc: "Emergency appointments are available if you need to be seen right away or are in pain."
     },
     {
         href: "/service",
-        img: "/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0056.jpg",
+        img: "/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-0056.jpg",
         title: "Sedation Dentistry",
         desc: "We are happy to offer sedation services to help make your procedure more comfortable."
     },
     {
         href: "/service",
-        img: "/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0057.jpg",
+        img: "/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-0057.jpg",
         title: "Cosmetic Implants",
         desc: "We offer a variety of implant dental services customized to your specific needs."
     },
     {
         href: "/service",
-        img: "/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-0058.jpg",
+        img: "/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-0058.jpg",
         title: "In-house Membership Plan",
         desc: "In-house Membership Plan"
     }

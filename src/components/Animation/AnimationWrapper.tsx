@@ -4,11 +4,11 @@ import React, {ReactNode, useEffect, useRef, useState} from 'react';
 import styles from './AnimationWrapper.module.css'; // Ensure you have the CSS file for animations
 interface ZoomInWrapperProps {
     children: ReactNode;
-    method: 'zoom-in' | 'fade-in';
+    method?: 'zoom-in' | 'fade-in';
     className?: string;
 }
 
-const AnimationWrapper: React.FC<ZoomInWrapperProps> = ({children, className, method}) => {
+const AnimationWrapper: React.FC<ZoomInWrapperProps> = ({children, className, method = 'zoom-in'}) => {
     const ref = useRef<HTMLDivElement>(null);
     const [animationActive, setAnimationActive] = useState(false);
 

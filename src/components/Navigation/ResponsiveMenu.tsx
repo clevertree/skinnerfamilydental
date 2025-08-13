@@ -21,7 +21,7 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({children}) => {
                 setOpen(false);
             }, 1000);
         }
-    }, [pathname]); // 'pathname' as a dependency ensures the effect re-runs on path changes
+    }, [pathname, open]); // 'pathname' as a dependency ensures the effect re-runs on path changes
 
 
     return (

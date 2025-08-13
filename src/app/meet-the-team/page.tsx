@@ -1,4 +1,8 @@
 import React from 'react';
+import {Metadata} from "next";
+import {buildMetaData} from "@util/metadata";
+
+export const metadata: Metadata = buildMetaData("Meet the Team")
 
 export default function MeetTheTeamPage() {
     return (

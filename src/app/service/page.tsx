@@ -1,5 +1,9 @@
 import React from 'react';
 import PhilipsAd from "@components/PhilipsAd";
+import type {Metadata} from "next";
+import {buildMetaData} from "@util/metadata";
+
+export const metadata: Metadata = buildMetaData("Service");
 
 export default function ServicePage() {
     return (

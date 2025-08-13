@@ -32,6 +32,9 @@
       "@template/*": [
         "./src/template/*"
       ],
+      "@util/*": [
+        "./src/util/*"
+      ],
       "@public/*": [
         "./public/*"
       ]

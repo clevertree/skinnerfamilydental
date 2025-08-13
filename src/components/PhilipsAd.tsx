@@ -6,7 +6,7 @@ export default function PhilipsAd() {
         <div id="c5324" className="col col-sm-12 col-md-12">
             <div className="imageModuleWrap" id="w_m4580">
                 <Image
-                    src="/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-025.jpg"
+                    src="/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-025.jpg"
                     alt=""
                     data-author=""
                     width={400}

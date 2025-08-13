@@ -2,6 +2,10 @@ import React from 'react';
 import ContactForm from "@components/Forms/ContactForm";
 import {sendContactFormEmail} from "../../actions/emailActions";
 import {Typography} from "@mui/material";
+import {Metadata} from "next";
+import {buildMetaData} from "@util/metadata";
+
+export const metadata: Metadata = buildMetaData("Contact Us")
 
 export default function ContactPage() {
     return (

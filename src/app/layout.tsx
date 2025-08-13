@@ -39,7 +39,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
             <link href="https://css-fonts.eu.extra-cdn.com/css?family=Roboto:300,500&display=swap" rel="stylesheet"/>
             <link rel="preconnect" href="https://fonts.prod.extra-cdn.com/" crossOrigin="anonymous"/>
             <style>{`.form input[type=submit] { width: auto !important; }`}</style>
-            <Script src="/assets/js/animation.js"></Script>
+            {/*<Script src="/assets/js/animation.js"></Script>*/}
             <Script src="/assets/js/legacy/html5shiv.js"></Script>
             <Script src="/assets/js/legacy/respond.js"></Script>
         </head>

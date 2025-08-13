@@ -9,15 +9,18 @@ import Image from "next/image";
 export default function HomePageSlideShow() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
-        '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-001.jpg',
-        '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-002.jpg',
-        '/uploads/imgs/Dr.StephanieL.Skinner-FamilyDentistry-003.jpg',
+        <Image key={1} src='/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-001.jpg'
+               alt={"Family Dentistry #1"} fill objectFit='cover'/>,
+        <Image key={2} src='/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-002.jpg'
+               alt={"Family Dentistry #2"} fill objectFit='cover'/>,
+        <Image key={3} src='/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-003.jpg'
+               alt={"Family Dentistry #3"} fill objectFit='cover'/>,
     ];
 
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-        }, 6000); // Change slide every 9 seconds
+        }, 6000);
         return () => clearInterval(timer);
     }, [slides.length]);
 
@@ -25,8 +28,8 @@ export default function HomePageSlideShow() {
     return (<Box className={'relative bg-white md:h-[28rem] lg:h-[32rem]'}>
 
             <Box className='relative h-[32vw] md:w-full md:h-full'>
-                {slides.map((slideURL, index) => (
-                    <Fade in={index === currentSlide} key={slideURL} timeout={2000}>
+                {slides.map((img, index) => (
+                    <Fade in={index === currentSlide} key={index} timeout={2000}>
                         <Box
                             sx={{
                                 position: 'absolute',
@@ -40,7 +43,7 @@ export default function HomePageSlideShow() {
                                 fontSize: '2rem',
                             }}
                         >
-                            <Image src={slideURL} alt={slideURL} fill objectFit='cover'/>
+                            {img}
                         </Box>
                     </Fade>
                 ))}

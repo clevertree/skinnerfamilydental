@@ -1,12 +1,13 @@
 import React from 'react';
+import Image from "next/image";
 
 const BiographySection: React.FC = () => (
     <div id="r2987" className="row ">
         <div className="container container-fixed colsStack">
             <div className="col col-sm-12 col-lg-3 col-md-4">
                 <div className="imageModuleWrap" id="w_m1265">
-                    <img
-                        src="/uploads/imgs/download-1.png"
+                    <Image
+                        src="/uploads/img/download-1.png"
                         alt="This is your alt tag"
                         width={210}
                         height={293}

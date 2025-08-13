@@ -13,6 +13,8 @@ import '@public/assets/css/grids.css'
 import '@public/assets/css/user-style.css'
 import '@public/assets/css/sitestyle.css'
 import NavReturn from "@components/Navigation/NavReturn";
+import Editable from "@components/Editable/Editable";
+import {CONTACT_PHONE} from "@constants";
 // import '../../public/assets/css/external-libs.css'
 
 export const metadata: Metadata = {
@@ -54,15 +56,17 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                     className="flex flex-col gap-2 sm:gap-8 sm:flex-row justify-between sm:justify-end items-center">
                     <div className="">
                         <p className="text leading-[1.1em] text-xl text-right font-extrabold">
-                            <a href="/contact">MAKE APPOINTMENT</a>
+                            <a href="/contact">
+                                <Editable name='HEADER_MAKE_APPOINTMENT'/>
+                            </a>
                         </p>
                     </div>
                     <div className="">
                         <p className="text leading-[1.1em] text-xl text-right font-extrabold">
                             <a
-                                href="tel:+19129256613">
+                                href={`tel:+1${CONTACT_PHONE.replace(/\D+/g, '')}`}>
                                 <FontAwesomeIcon width={18} height={18} icon={faPhone} className='mr-2'/>
-                                <span>(912) 925-6613</span>
+                                <Editable name='CONTACT_PHONE'/>
                             </a>
                         </p>
                     </div>
@@ -190,11 +194,10 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
             <div className="container container-">
                 <div className="col col-sm-12 text-left">
                     <p>
-                        Managed by{' '}
-                        <a rel="nofollow noopener"
-                           className='font-bold'
+                        <Editable name='FOOTER_MANAGED_BY_TEXT'/>
+                        <a className='font-bold'
                            href="mailto:ari@asu.edu" target="_blank">
-                            Ari
+                            <Editable name='FOOTER_MANAGED_BY'/>
                         </a>
                     </p>
                 </div>

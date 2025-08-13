@@ -1548,7 +1548,7 @@ nav > li.active > a {
 .brandfooter,
 .brandfooter a {
     color: rgb(255, 255, 255);
-    font-family: Open Sans;
+    /*font-family: Open Sans;*/
 }
 
 @media only screen and (max-width: 1199px) {

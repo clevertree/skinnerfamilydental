@@ -35,6 +35,9 @@
       "@util/*": [
         "./src/util/*"
       ],
+      "@constants": [
+        "./src/constants/index.ts"
+      ],
       "@public/*": [
         "./public/*"
       ]

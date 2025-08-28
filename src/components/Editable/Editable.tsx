@@ -1,11 +1,13 @@
 'use client'
 
-import React, {DOMAttributes, HTMLAttributes} from 'react';
-import * as Constants from "@constants"
+import React, {DOMAttributes, HTMLAttributes, useContext} from 'react';
 import {getValue} from "@util/editable";
+import {EditableContext, VariableName} from "@components/Editable/Context/EditableContext";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEdit} from "@fortawesome/free-solid-svg-icons";
 
 export interface EditableProps extends HTMLAttributes<HTMLSpanElement> {
-    name: keyof typeof Constants,
+    name: VariableName,
     component?: React.ElementType<DOMAttributes<HTMLSpanElement>>,
     html?: boolean
 }
@@ -16,6 +18,7 @@ export default function Editable({
                                      html = false,
                                      ...props
                                  }: EditableProps) {
+    const {editMode, toggleEditMode, setConstantName} = useContext(EditableContext);
     const value = getValue(name);
     let returnValue: string | React.ReactNode = value;
 
@@ -30,12 +33,20 @@ export default function Editable({
             returnValue = <Component {...props}>{returnValue}</Component>;
     }
 
-    return returnValue;
-    // return <>
-    //     {returnValue}
-    //     <FontAwesomeIcon width={12} height={12}
-    //                      icon={faEdit}
-    //                      className='ml-1'/>
-    // </>
+    if (!editMode)
+        return returnValue;
+    return (
+        <span onClick={(e) => {
+            e.preventDefault();
+            console.log(name)
+            setConstantName(name);
+            toggleEditMode();
+        }}>
+            {returnValue}
+            <FontAwesomeIcon width={12} height={12}
+                             icon={faEdit}
+                             className='ml-1'/>
+        </span>
+    )
 }
 

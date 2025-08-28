@@ -1,13 +1,32 @@
 'use client'
 
 import {createContext} from "react";
-import * as Constants from "@constants";
+import {VariableList} from "@constants";
+
+export type VariableName = keyof VariableList;
 
 export interface IEditableContext {
-    constants: Partial<typeof Constants>
+    editMode: boolean,
+    showEditor: boolean,
+    constants: Partial<VariableList>,
+
+    getValue(constantName: VariableName): string,
+
+    setConstantName(constantName: VariableName): void,
+
+    toggleEditMode(): void,
 }
 
 export const EditableContext = createContext<IEditableContext>({
-    constants: {}
+    editMode: false,
+    showEditor: false,
+    constants: {},
+    getValue() {
+        return
+    },
+    setConstantName() {
+    },
+    toggleEditMode: () => {
+    }
 })
 

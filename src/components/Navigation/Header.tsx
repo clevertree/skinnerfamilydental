@@ -6,7 +6,6 @@ import ResponsiveMenu from "@components/Navigation/ResponsiveMenu";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCaretDown, faPhone} from '@fortawesome/free-solid-svg-icons';
 import Editable from "@components/Editable/Editable";
-import {CONTACT_PHONE} from "@constants";
 
 const Header: React.FC = () => {
     return (
@@ -17,7 +16,7 @@ const Header: React.FC = () => {
                     <div className="">
                         <p className="text leading-[1.1em] text-xl text-right font-extrabold">
                             <a href="/contact">
-                                <Editable name='HEADER_MAKE_APPOINTMENT'/>
+                                <Editable name='HEADER_MAKE_APPOINTMENT'>MAKE APPOINTMENT</Editable>
                             </a>
                         </p>
                     </div>
@@ -25,7 +24,7 @@ const Header: React.FC = () => {
                         <p className="text leading-[1.1em] text-xl text-right font-extrabold">
                             <a href={`tel:+1${CONTACT_PHONE.replace(/\D+/g, '')}`}>
                                 <FontAwesomeIcon width={18} height={18} icon={faPhone} className='mr-2'/>
-                                <Editable name='CONTACT_PHONE'/>
+                                <Editable name='CONTACT_PHONE'>(912) 925-6613</Editable>
                             </a>
                         </p>
                     </div>

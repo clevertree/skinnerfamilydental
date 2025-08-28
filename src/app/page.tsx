@@ -9,7 +9,7 @@ import {ContactSection} from "@components/ContactSection";
 
 // export const metadata: Metadata = buildMetaData("Home");
 
-export default function HomePage() {
+export default async function HomePage() {
     return (
         <>
             <div id="r5002" className="row designRow">

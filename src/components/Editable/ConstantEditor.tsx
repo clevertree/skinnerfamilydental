@@ -1,10 +1,15 @@
 'use client'
-import {EditableContext} from "@components/Editable/Context/EditableContext";
+import {EditableContext, VariableName} from "@components/Editable/Context/EditableContext";
 import {useContext} from "react";
 
-export default function ConstantEditor() {
-    const {constants} = useContext(EditableContext);
-    return <div className='hidden'>
+interface ConstantEditorProps {
+    constantName: VariableName;
+}
+
+export default function ConstantEditor({constantName}: ConstantEditorProps) {
+    const {constants, showEditor} = useContext(EditableContext);
+    return <div className={showEditor ? 'hidden' : ''}>
         {JSON.stringify(constants, null, 2)}
+        {constantName}
     </div>
 };

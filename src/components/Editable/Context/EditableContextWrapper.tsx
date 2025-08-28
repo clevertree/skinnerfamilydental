@@ -2,7 +2,7 @@
 
 import React from "react";
 import {EditableContext, IEditableContext} from "@components/Editable/Context/EditableContext";
-import ConstantEditor, {EditorState} from "@components/Editable/ConstantEditor";
+import SiteEditor, {EditorState} from "@components/Editable/Editor/SiteEditor";
 
 export default function EditableContextWrapper({children}: {
     children: React.ReactNode,
@@ -15,8 +15,8 @@ export default function EditableContextWrapper({children}: {
         showEditor: !!editorState,
         openEditor(constantName, constantValue) {
             setEditorState({
-                constantName,
-                constantValue
+                siteVarName: constantName,
+                siteVarValue: constantValue
             })
         },
         closeEditor: () => setEditorState(undefined),
@@ -26,6 +26,6 @@ export default function EditableContextWrapper({children}: {
     console.log('context', context, editorState)
     return <EditableContext.Provider value={context}>
         {children}
-        {editorState && <ConstantEditor {...editorState}/>}
+        {editorState && <SiteEditor {...editorState}/>}
     </EditableContext.Provider>
 };

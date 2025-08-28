@@ -10,11 +10,11 @@ export default function HomePageSlideShow() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
         <Image key={1} src='/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-001.jpg'
-               alt={"Family Dentistry #1"} fill objectFit='cover'/>,
+               alt={"Family Dentistry #1"} fill style={{objectFit: "cover"}}/>,
         <Image key={2} src='/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-002.jpg'
-               alt={"Family Dentistry #2"} fill objectFit='cover'/>,
+               alt={"Family Dentistry #2"} fill style={{objectFit: "cover"}}/>,
         <Image key={3} src='/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-003.jpg'
-               alt={"Family Dentistry #3"} fill objectFit='cover'/>,
+               alt={"Family Dentistry #3"} fill style={{objectFit: "cover"}}/>,
     ];
 
     useEffect(() => {

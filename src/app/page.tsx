@@ -9,7 +9,7 @@ import {ContactSection} from "@components/ContactSection";
 
 // export const metadata: Metadata = buildMetaData("Home");
 
-export default function HomePage() {
+export default async function HomePage() {
     return (
         <>
             <div id="r5002" className="row designRow">
@@ -25,7 +25,6 @@ export default function HomePage() {
                                     buttonText="TOUR OUR OFFICE"
                                     buttonHref="/the-office"/>
                         <FeatureRow headline="Honest & Affordable"
-                                    reverse
                                     className='bg-white'
                                     imgSrc="/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-006.jpg"
                                     body="Have peace of mind knowing that you will only be advised to undergo the necessary procedures and services and you will not be overcharged. We pride ourselves in offering the services you need, when you then them, with the quality of care and attention you deserve."

@@ -37,7 +37,9 @@ const FeatureRow: React.FC<FeatureRowProps> = ({
             </div>
             <div className="col col-sm-12 col-md-6 col-lg-6 flexCol min-h-64">
                 <div className="module autospacer"/>
-                <Image src={imgSrc} alt={imgSrc} fill objectFit='cover'/>
+                <Image src={imgSrc} alt={imgSrc} fill
+                       style={{objectFit: "cover"}}
+                />
             </div>
         </div>
     </div>

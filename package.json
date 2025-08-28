@@ -25,9 +25,15 @@
     "@mui/material-nextjs": "^7.2.0",
     "next": "^15.4.6",
     "nodemailer": "^7.0.3",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-material-ui-carousel": "^3.4.2"
+    "react-material-ui-carousel": "^3.4.2",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.0",
+    "sequelize-typescript": "^2.1.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -35,6 +41,7 @@
     "@types/next": "^9.0.0",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.17",
+    "@types/pg": "^8.15.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",

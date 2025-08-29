@@ -21,10 +21,13 @@ export async function fetchSiteVars() {
         const {key, value} = siteVar.dataValues;
         cachedSiteVars[key as keyof SiteVariables] = value;
     }
+    console.log('SiteVars:', cachedSiteVars);
     return cachedSiteVars;
 }
 
 export async function updateSiteVar(name: keyof SiteVariables, value: string) {
+    if (process.env.NEXT_PUBLIC_EDIT_MODE !== 'true')
+        throw new Error('Cannot update site vars in non-edit mode');
     // Use upsert to insert or update the record
     await SiteVar.upsert({
         key: name,

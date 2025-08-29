@@ -9,6 +9,10 @@ import {ContactSection} from "@components/ContactSection";
 
 // export const metadata: Metadata = buildMetaData("Home");
 
+// Next.js will invalidate the cache when a
+// request comes in, at most once every 60 seconds.
+export const revalidate = 60
+
 export default async function HomePage() {
     return (
         <>

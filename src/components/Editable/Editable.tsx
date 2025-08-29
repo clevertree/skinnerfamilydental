@@ -24,7 +24,6 @@ export default async function Editable({
     const siteVar = siteVars && siteVars[name] ? siteVars[name] : null;
     const siteVarValue = siteVar || defaultValue
     let returnValue: React.ReactNode | string = siteVar || defaultValue;
-    console.log(name, returnValue, siteVars);
     if (html) {
         const HTMLComponent = Component || 'span'
         returnValue = <HTMLComponent dangerouslySetInnerHTML={{

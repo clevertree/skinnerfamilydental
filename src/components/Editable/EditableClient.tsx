@@ -22,7 +22,6 @@ export default function EditableClient({
     return (
         <span onClick={(e) => {
             e.preventDefault();
-            console.log(name, value, showEditor)
             openEditor(name, value);
         }}>
             {name === editVarName && showEditor ? editVarUpdatedValue : children}

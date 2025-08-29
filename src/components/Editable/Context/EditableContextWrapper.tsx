@@ -9,7 +9,7 @@ export default function EditableContextWrapper({children}: {
     children: React.ReactNode,
 }) {
     // const [editMode, setEditMode] = React.useState(
-    const editMode = process.env.NODE_ENV === 'development';
+    const editMode = process.env.NEXT_PUBLIC_EDIT_MODE === 'true';
     const [context, setContext] = React.useState<IEditableContext>({
         editMode,
         showEditor: false,
@@ -32,9 +32,8 @@ export default function EditableContextWrapper({children}: {
         // getValue: (editorState: VariableName) => variables[editorState],
         // variables,
     });
-    console.log('context', context, context)
     return <EditableContext.Provider value={context}>
         {children}
-        {context && <SiteEditor onSubmit={updateSiteVar}/>}
+        {editMode && <SiteEditor onSubmit={updateSiteVar}/>}
     </EditableContext.Provider>
 };

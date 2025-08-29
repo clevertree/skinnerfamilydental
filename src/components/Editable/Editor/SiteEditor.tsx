@@ -64,7 +64,7 @@ export default function SiteEditor({
     const handleValueChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const newValue = event.target.value;
         updateEditorValue(newValue);
-        setIsDirty(editVarUpdatedValue !== editVarDefaultValue);
+        setIsDirty(newValue !== editVarDefaultValue);
         updateEditorValue(newValue);
     };
 
@@ -78,7 +78,7 @@ export default function SiteEditor({
             await onSubmit(editVarName, editVarUpdatedValue);
 
             setIsDirty(false);
-            if (pendingAction === 'close') {
+            if (pendingAction === 'close' || pendingAction === 'save') {
                 closeEditor();
             }
             setShowConfirmModal(false);

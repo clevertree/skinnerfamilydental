@@ -15,15 +15,18 @@ import {
     TextField,
     Typography
 } from "@mui/material";
-import {Close as CloseIcon, Save as SaveIcon} from "@mui/icons-material";
+import {Close as CloseIcon, Logout as LogoutIcon, Save as SaveIcon} from "@mui/icons-material";
 import Draggable from "react-draggable";
+import {ActionResponse} from "@util/types";
 
 export interface SiteEditorProps {
-    onSubmit: (name: keyof SiteVariables, value: string) => Promise<void>
+    onSubmit: (name: keyof SiteVariables, value: string) => Promise<void>,
+    onLogOut: () => Promise<ActionResponse>
 }
 
 export default function SiteEditor({
-                                       onSubmit
+                                       onSubmit,
+                                       onLogOut
                                    }: SiteEditorProps) {
     const {
         showEditor, closeEditor,
@@ -123,12 +126,40 @@ export default function SiteEditor({
         setPendingAction(null);
     };
 
+    const handleLogout = async () => {
+        try {
+            await onLogOut();
+        } catch (error) {
+            console.error('Error logging out:', error);
+        }
+    };
+
     if (!showEditor) {
         return null;
     }
 
     return (
         <>
+            {/* Floating Logout Button */}
+            <IconButton
+                onClick={handleLogout}
+                sx={{
+                    position: 'fixed',
+                    top: 20,
+                    right: 20,
+                    backgroundColor: 'error.main',
+                    color: 'white',
+                    zIndex: (theme) => theme.zIndex.modal + 1,
+                    '&:hover': {
+                        backgroundColor: 'error.dark',
+                    },
+                    boxShadow: 3
+                }}
+                size="large"
+            >
+                <LogoutIcon/>
+            </IconButton>
+
             <Backdrop
                 onClick={handleClose}
                 sx={{

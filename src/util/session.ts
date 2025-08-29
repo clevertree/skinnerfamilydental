@@ -5,6 +5,9 @@ import {cookies} from 'next/headers';
 import {HttpError} from '@util/exception/httpError';
 import {UserType} from "@util/pgclient";
 
+import {ActionResponse} from "@util/types";
+import {addUserLogEntry} from "@util/logActions";
+
 export interface SessionPayload extends JWTPayload {
     userID: number,
     userType: UserType,
@@ -28,7 +31,10 @@ export async function decrypt(session: string | undefined = '') {
             algorithms: ['HS256'],
         });
         return payload;
-    } catch (_error: unknown) {
+    } catch (error: unknown) {
+        if (error instanceof Error) {
+            throw HttpError.Unauthorized(`Failed to verify session - Please login. Error: ${error.message} ${session}`);
+        }
         throw HttpError.Unauthorized('Failed to verify session - Please login');
     }
 }
@@ -63,13 +69,31 @@ export async function endSession() {
     return session;
 }
 
-export async function decryptSession() {
-    const cookie = (await cookies()).get('session')?.value;
-    return await decrypt(cookie) as SessionPayload;
+export async function getSessionCookie() {
+    return (await cookies()).get('session')?.value;
 }
 
 export async function validateSession() {
     const session = await decryptSession();
     if (!session || !session.userID) throw HttpError.Unauthorized('Unauthorized - Please login');
     return session;
+}
+
+/** Server Actions **/
+
+export async function logoutAction(): Promise<ActionResponse> {
+    try {
+        const oldSession = await endSession();
+        const {userID} = oldSession;
+
+        // Add a log entry
+        await addUserLogEntry(userID, 'log-out');
+    } catch (e: unknown) {
+        console.error('Error logging out: ', e);
+    }
+    return {
+        status: 'success',
+        message: 'Log out successful. Redirecting...',
+        redirectURL: '/login'
+    };
 }

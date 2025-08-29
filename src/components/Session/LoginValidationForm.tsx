@@ -3,7 +3,8 @@
 import React, {FormEvent, useEffect, useState} from 'react';
 import {Alert, Box, Button, TextField, Typography} from '@mui/material';
 import type {AlertColor} from '@mui/material/Alert';
-import {ActionResponse} from "@util/emailActions";
+
+import {ActionResponse} from "@util/types";
 
 interface LoginValidationFormProps {
     receiver: string

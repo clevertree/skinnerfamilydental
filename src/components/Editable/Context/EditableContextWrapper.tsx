@@ -4,6 +4,7 @@ import React from "react";
 import {EditableContext, IEditableContext} from "@components/Editable/Context/EditableContext";
 import SiteEditor from "@components/Editable/Editor/SiteEditor";
 import {updateSiteVar} from "@util/editable";
+import {logoutAction} from "@util/session";
 
 export default function EditableContextWrapper({children, editMode}: {
     children: React.ReactNode,
@@ -34,6 +35,6 @@ export default function EditableContextWrapper({children, editMode}: {
     });
     return <EditableContext.Provider value={context}>
         {children}
-        {editMode && <SiteEditor onSubmit={updateSiteVar}/>}
+        {editMode && <SiteEditor onSubmit={updateSiteVar} onLogOut={logoutAction}/>}
     </EditableContext.Provider>
 };

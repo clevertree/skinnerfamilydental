@@ -4,7 +4,8 @@ import React, {FormEvent, useState} from 'react';
 import {Alert, Box, Button, TextField, Typography} from '@mui/material';
 import type {AlertColor} from '@mui/material/Alert';
 import {validateEmail} from "@util/validation";
-import {ActionResponse} from "@util/emailActions";
+
+import {ActionResponse} from "@util/types";
 
 interface LoginEmailFormProps {
     autoFocus?: boolean

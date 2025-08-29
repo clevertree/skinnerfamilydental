@@ -7,12 +7,7 @@ import {Op} from 'sequelize';
 import {User, User2FactorCode} from "@util/pgclient";
 import User2FactorEmailTemplate from "@template/email/User2FactorEmailTemplate";
 import {sendMail} from "@util/mail";
-
-export type ActionResponse = {
-    status: 'success' | 'error';
-    message: string;
-    redirectURL?: string;
-};
+import {ActionResponse} from "@util/types";
 
 
 export async function loginEmailAction(email: string): Promise<ActionResponse> {

@@ -11,7 +11,7 @@ import NavReturn from "@components/Navigation/NavReturn";
 import Header from '@components/Navigation/Header';
 import Footer from '@components/Navigation/Footer';
 import EditableContextWrapper from "@components/Editable/Context/EditableContextWrapper";
-import {decryptSession} from "@util/session";
+import {decrypt, getSessionCookie, SessionPayload} from "@util/session";
 
 export const metadata: Metadata = {
     title: 'Stephanie L. Skinner D.M.D. Family Dentistry | Savannah, GA',
@@ -28,11 +28,17 @@ export const metadata: Metadata = {
 export default async function RootLayout({children}: { children: React.ReactNode }) {
 
     // const siteVars = await fetchSiteVars()
-    const session = await decryptSession();
-    const isAdmin = session && session.userType === 'admin';
-    const editMode = process.env.NEXT_PUBLIC_EDIT_MODE === 'true' && isAdmin;
+    const sessionCookie = await getSessionCookie();
+    let isAdmin = false;
+    let editMode = false;
+    if (sessionCookie) {
+        const session = await decrypt(sessionCookie) as SessionPayload;
+        isAdmin = session && session.userType === 'admin';
+        editMode = process.env.NEXT_PUBLIC_EDIT_MODE === 'true' && isAdmin;
+    }
 
-    console.log('session', session, isAdmin, editMode)
+
+    console.log('session', isAdmin, editMode)
     return (
         <html lang="en">
         <head>

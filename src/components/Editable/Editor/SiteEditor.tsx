@@ -89,7 +89,6 @@ export default function SiteEditor({
             setShowConfirmModal(false);
             setPendingAction(null);
             router.refresh();
-
         } catch (error) {
             console.error('Error saving:', error);
         }
@@ -134,10 +133,38 @@ export default function SiteEditor({
         try {
             await onLogOut();
             router.refresh();
+            window.location.reload(); // Force refresh
         } catch (error) {
             console.error('Error logging out:', error);
         }
     };
+
+    // Handle keyboard events
+    useEffect(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (!showEditor) return;
+
+            if (event.key === 'Escape') {
+                event.preventDefault();
+                handleClose();
+            } else if (event.key === 'Enter' && (event.ctrlKey || event.metaKey)) {
+                event.preventDefault();
+                if (isDirty) {
+                    handleSave();
+                } else {
+                    closeEditor();
+                }
+            }
+        };
+
+        if (showEditor) {
+            document.addEventListener('keydown', handleKeyDown);
+        }
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [showEditor, isDirty]);
 
     if (!showEditor) {
         return null;
@@ -147,6 +174,7 @@ export default function SiteEditor({
         <>
             {/* Floating Logout Button */}
             <IconButton
+                title="Click to log out of the site editor."
                 onClick={handleLogout}
                 sx={{
                     position: 'fixed',

@@ -43,7 +43,7 @@ export default function EditableClient({
             {returnValue}
             <FontAwesomeIcon width={12} height={12}
                              icon={faEdit}
-                             className='ml-1'/>
+                             className='ml-1 cursor-pointer'/>
         </span>
     )
 }

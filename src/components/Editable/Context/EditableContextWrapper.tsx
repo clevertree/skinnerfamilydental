@@ -5,11 +5,11 @@ import {EditableContext, IEditableContext} from "@components/Editable/Context/Ed
 import SiteEditor from "@components/Editable/Editor/SiteEditor";
 import {updateSiteVar} from "@util/editable";
 
-export default function EditableContextWrapper({children}: {
+export default function EditableContextWrapper({children, editMode}: {
     children: React.ReactNode,
+    editMode: boolean
 }) {
     // const [editMode, setEditMode] = React.useState(
-    const editMode = process.env.NEXT_PUBLIC_EDIT_MODE === 'true';
     const [context, setContext] = React.useState<IEditableContext>({
         editMode,
         showEditor: false,

@@ -11,6 +11,7 @@ import NavReturn from "@components/Navigation/NavReturn";
 import Header from '@components/Navigation/Header';
 import Footer from '@components/Navigation/Footer';
 import EditableContextWrapper from "@components/Editable/Context/EditableContextWrapper";
+import {decryptSession} from "@util/session";
 
 export const metadata: Metadata = {
     title: 'Stephanie L. Skinner D.M.D. Family Dentistry | Savannah, GA',
@@ -27,7 +28,11 @@ export const metadata: Metadata = {
 export default async function RootLayout({children}: { children: React.ReactNode }) {
 
     // const siteVars = await fetchSiteVars()
+    const session = await decryptSession();
+    const isAdmin = session && session.userType === 'admin';
+    const editMode = process.env.NEXT_PUBLIC_EDIT_MODE === 'true' && isAdmin;
 
+    console.log('session', session, isAdmin, editMode)
     return (
         <html lang="en">
         <head>
@@ -48,9 +53,9 @@ export default async function RootLayout({children}: { children: React.ReactNode
             <a className="skipNavigationLink" aria-label="Skip to content" title="Skip to content" href="#main-content">Skip
                 to content</a>
         </div>
-        <EditableContextWrapper>
+        <EditableContextWrapper editMode={editMode}>
             <Header/>
-        <main id="main-content" aria-label="Page Content">{children}</main>
+            <main id="main-content" aria-label="Page Content">{children}</main>
             <Footer/>
         </EditableContextWrapper>
         <NavReturn>

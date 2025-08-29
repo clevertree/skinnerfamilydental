@@ -1,4 +1,7 @@
+'use server'
+
 import {SiteVar} from "@util/pgclient";
+import {revalidatePath} from "next/cache";
 
 export interface SiteVariables {
     HEADER_MAKE_APPOINTMENT?: string;
@@ -19,4 +22,18 @@ export async function fetchSiteVars() {
         cachedSiteVars[key as keyof SiteVariables] = value;
     }
     return cachedSiteVars;
+}
+
+export async function updateSiteVar(name: keyof SiteVariables, value: string) {
+    // Use upsert to insert or update the record
+    await SiteVar.upsert({
+        key: name,
+        value: value
+    });
+
+    // Clear cache
+    cachedSiteVars = undefined;
+
+    // Invalidate nextjs cache
+    revalidatePath('/', 'layout');
 }

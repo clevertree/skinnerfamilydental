@@ -16,7 +16,7 @@ export default function EditableClient({
                                            children,
                                            value
                                        }: EditableClientProps) {
-    const {editMode, openEditor, showEditor} = useContext(EditableContext);
+    const {editMode, openEditor, showEditor, editVarUpdatedValue, editVarName} = useContext(EditableContext);
     if (!editMode)
         return children;
     return (
@@ -25,7 +25,7 @@ export default function EditableClient({
             console.log(name, value, showEditor)
             openEditor(name, value);
         }}>
-            {children}
+            {name === editVarName && showEditor ? editVarUpdatedValue : children}
             <FontAwesomeIcon width={12} height={12}
                              icon={faEdit}
                              className='ml-1'/>

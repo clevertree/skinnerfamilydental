@@ -2,30 +2,39 @@
 
 import React from "react";
 import {EditableContext, IEditableContext} from "@components/Editable/Context/EditableContext";
-import SiteEditor, {EditorState} from "@components/Editable/Editor/SiteEditor";
+import SiteEditor from "@components/Editable/Editor/SiteEditor";
+import {updateSiteVar} from "@util/editable";
 
 export default function EditableContextWrapper({children}: {
     children: React.ReactNode,
 }) {
     // const [editMode, setEditMode] = React.useState(
     const editMode = process.env.NODE_ENV === 'development';
-    const [editorState, setEditorState] = React.useState<EditorState | undefined>();
-    const context: IEditableContext = {
+    const [context, setContext] = React.useState<IEditableContext>({
         editMode,
-        showEditor: !!editorState,
-        openEditor(constantName, constantValue) {
-            setEditorState({
-                siteVarName: constantName,
-                siteVarValue: constantValue
-            })
+        showEditor: false,
+        openEditor(editVarName, editVarValue) {
+            setContext((oldContext) => ({
+                ...oldContext,
+                editVarName,
+                editVarDefaultValue: editVarValue,
+                editVarUpdatedValue: editVarValue,
+                showEditor: true,
+            }))
         },
-        closeEditor: () => setEditorState(undefined),
+        updateEditorValue(editVarUpdatedValue: string) {
+            setContext((oldContext) => ({
+                ...oldContext,
+                editVarUpdatedValue,
+            }))
+        },
+        closeEditor: () => setContext((oldContext) => ({...oldContext, showEditor: false})),
         // getValue: (editorState: VariableName) => variables[editorState],
         // variables,
-    }
-    console.log('context', context, editorState)
+    });
+    console.log('context', context, context)
     return <EditableContext.Provider value={context}>
         {children}
-        {editorState && <SiteEditor {...editorState}/>}
+        {context && <SiteEditor onSubmit={updateSiteVar}/>}
     </EditableContext.Provider>
 };

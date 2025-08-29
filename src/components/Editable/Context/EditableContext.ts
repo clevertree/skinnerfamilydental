@@ -10,11 +10,16 @@ export type VariableName = keyof SiteVariables;
 export interface IEditableContext {
     editMode: boolean,
     showEditor: boolean,
+    editVarName?: keyof SiteVariables,
+    editVarDefaultValue?: string,
+    editVarUpdatedValue?: string,
     // variables: SiteVariables,
 
     // getValue(constantName: VariableName): string | undefined,
 
     openEditor(siteVarName: VariableName, siteVarCurrentValue: string): void,
+
+    updateEditorValue(siteVarCurrentValue: string): void,
 
     closeEditor(): void,
 }
@@ -27,6 +32,8 @@ export const EditableContext = createContext<IEditableContext>({
     //     return undefined
     // },
     openEditor() {
+    },
+    updateEditorValue() {
     },
     closeEditor: () => {
     }

@@ -1,6 +1,6 @@
 'use client'
 import {EditableContext} from "@components/Editable/Context/EditableContext";
-import {useContext, useEffect, useState} from "react";
+import {useContext, useEffect, useRef, useState} from "react";
 import {SiteVariables} from "@util/editable";
 import {
     Backdrop,
@@ -16,24 +16,30 @@ import {
     Typography
 } from "@mui/material";
 import {Close as CloseIcon, Save as SaveIcon} from "@mui/icons-material";
+import Draggable from "react-draggable";
 
-export interface EditorState {
-    siteVarName: keyof SiteVariables,
-    siteVarValue: string,
+export interface SiteEditorProps {
+    onSubmit: (name: keyof SiteVariables, value: string) => Promise<void>
 }
 
-export default function SiteEditor({siteVarName, siteVarValue}: EditorState) {
-    const {showEditor, closeEditor} = useContext(EditableContext);
-    const [currentValue, setCurrentValue] = useState(siteVarValue || '');
+export default function SiteEditor({
+                                       onSubmit
+                                   }: SiteEditorProps) {
+    const {
+        showEditor, closeEditor,
+        editVarName,
+        editVarDefaultValue,
+        editVarUpdatedValue,
+        updateEditorValue
+    } = useContext(EditableContext);
     const [isDirty, setIsDirty] = useState(false);
     const [showConfirmModal, setShowConfirmModal] = useState(false);
     const [pendingAction, setPendingAction] = useState<'close' | 'save' | null>(null);
 
-    // Update current value when siteVarValue prop changes
+    // Update current value when editVarValue prop changes
     useEffect(() => {
-        setCurrentValue(siteVarValue || '');
         setIsDirty(false);
-    }, [siteVarValue]);
+    }, [editVarDefaultValue]);
 
     // Handle beforeunload event to warn about unsaved changes
     useEffect(() => {
@@ -53,17 +59,23 @@ export default function SiteEditor({siteVarName, siteVarValue}: EditorState) {
         };
     }, [isDirty, showEditor]);
 
+    const nodeRef = useRef(null);
+
     const handleValueChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const newValue = event.target.value;
-        setCurrentValue(newValue);
-        setIsDirty(newValue !== (siteVarValue || ''));
+        updateEditorValue(newValue);
+        setIsDirty(editVarUpdatedValue !== editVarDefaultValue);
+        updateEditorValue(newValue);
     };
 
     const handleSave = async () => {
+        if (!editVarName)
+            throw new Error("Invalid editVarName")
+        if (!editVarUpdatedValue)
+            throw new Error("Invalid editVarUpdatedValue")
         try {
-            // Here you would implement your save logic
-            // For example: await saveSiteVariable(siteVarName, currentValue);
-            console.log(`Saving ${siteVarName}: ${currentValue}`);
+            console.log(`Saving ${editVarName}: ${editVarUpdatedValue}`);
+            await onSubmit(editVarName, editVarUpdatedValue);
 
             setIsDirty(false);
             if (pendingAction === 'close') {
@@ -98,7 +110,6 @@ export default function SiteEditor({siteVarName, siteVarValue}: EditorState) {
     };
 
     const handleConfirmDiscard = () => {
-        setCurrentValue(siteVarValue || '');
         setIsDirty(false);
         setShowConfirmModal(false);
         if (pendingAction === 'close') {
@@ -128,66 +139,70 @@ export default function SiteEditor({siteVarName, siteVarValue}: EditorState) {
                 open={showEditor}
             />
 
-            <Paper
-                sx={{
-                    position: 'fixed',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    width: '90%',
-                    maxWidth: 600,
-                    zIndex: (theme) => theme.zIndex.modal,
-                    p: 3,
-                    maxHeight: '90vh',
-                    overflow: 'auto'
-                }}
-                elevation={8}
-            >
-                <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2}}>
-                    <Typography variant="h6" component="h2">
-                        Edit Site Property
-                    </Typography>
-                    <IconButton onClick={handleClose} size="small">
-                        <CloseIcon/>
-                    </IconButton>
-                </Box>
-
-                <form onSubmit={handleSubmit}>
-                    <Typography variant="subtitle1" sx={{mb: 1, fontWeight: 'medium'}}>
-                        Property: {siteVarName}
-                    </Typography>
-
-                    <TextField
-                        fullWidth
-                        multiline
-                        rows={3}
-                        variant="outlined"
-                        label="Property Value"
-                        value={currentValue}
-                        onChange={handleValueChange}
-                        sx={{mb: 3}}
-                        autoFocus
-                        placeholder="Enter the site property value..."
-                    />
-
-                    <Box sx={{display: 'flex', gap: 2, justifyContent: 'flex-end'}}>
-                        <Button
-                            variant="outlined"
-                            onClick={handleClose}
-                        >
-                            Cancel
-                        </Button>
-                        <Button
-                            type="submit"
-                            variant="contained"
-                            startIcon={<SaveIcon/>}
-                            disabled={!isDirty}
-                        >
-                            Save & Publish
-                        </Button>
+            <Draggable
+                nodeRef={nodeRef}>
+                <Paper
+                    ref={nodeRef}
+                    sx={{
+                        position: 'fixed',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '90%',
+                        maxWidth: 600,
+                        zIndex: (theme) => theme.zIndex.modal,
+                        p: 3,
+                        maxHeight: '90vh',
+                        overflow: 'auto'
+                    }}
+                    elevation={8}
+                >
+                    <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2}}>
+                        <Typography variant="h6" component="h2">
+                            Edit Site Property
+                        </Typography>
+                        <IconButton onClick={handleClose} size="small">
+                            <CloseIcon/>
+                        </IconButton>
                     </Box>
-                </form>
-            </Paper>
+
+                    <form onSubmit={handleSubmit}>
+                        <Typography variant="subtitle1" sx={{mb: 1, fontWeight: 'medium'}}>
+                            Property: {editVarName}
+                        </Typography>
+
+                        <TextField
+                            fullWidth
+                            multiline
+                            rows={3}
+                            variant="outlined"
+                            label="Property Value"
+                            value={editVarUpdatedValue}
+                            onChange={handleValueChange}
+                            sx={{mb: 3}}
+                            autoFocus
+                            placeholder="Enter the site property value..."
+                        />
+
+                        <Box sx={{display: 'flex', gap: 2, justifyContent: 'flex-end'}}>
+                            <Button
+                                variant="outlined"
+                                onClick={handleClose}
+                            >
+                                Cancel
+                            </Button>
+                            <Button
+                                type="submit"
+                                variant="contained"
+                                startIcon={<SaveIcon/>}
+                                disabled={!isDirty}
+                            >
+                                Save & Publish
+                            </Button>
+                        </Box>
+                    </form>
+                </Paper>
+            </Draggable>
 
             {/* Confirmation Modal */}
             <Dialog
@@ -202,8 +217,8 @@ export default function SiteEditor({siteVarName, siteVarValue}: EditorState) {
                 <DialogContent>
                     <Typography>
                         {pendingAction === 'save'
-                            ? `Are you sure you want to save and publish the changes to "${siteVarName}"?`
-                            : `You have unsaved changes to "${siteVarName}". What would you like to do?`
+                            ? `Are you sure you want to save and publish the changes to "${editVarName}"?`
+                            : `You have unsaved changes to "${editVarName}". What would you like to do?`
                         }
                     </Typography>
                 </DialogContent>

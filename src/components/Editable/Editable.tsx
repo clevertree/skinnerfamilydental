@@ -5,16 +5,16 @@ import {VariableName} from "@components/Editable/Context/EditableContext";
 import EditableClient from "@components/Editable/EditableClient";
 import {fetchSiteVars} from "@util/editable";
 
-export interface EditableProps extends HTMLAttributes<HTMLSpanElement> {
+export interface EditableProps extends HTMLAttributes<HTMLElement> {
     name: VariableName,
     defaultValue: string,
-    component?: React.ElementType<DOMAttributes<HTMLSpanElement>>,
+    component?: React.ElementType<DOMAttributes<HTMLElement>>,
     html?: boolean
 }
 
 export default async function Editable({
                                            name,
-                                           component: Component,
+                                           component,
                                            html = false,
                                            defaultValue,
                                            ...props
@@ -23,22 +23,13 @@ export default async function Editable({
 
     const siteVar = siteVars && siteVars[name] ? siteVars[name] : null;
     const siteVarValue = siteVar || defaultValue
-    let returnValue: React.ReactNode | string = siteVar || defaultValue;
-    if (html) {
-        const HTMLComponent = Component || 'span'
-        returnValue = <HTMLComponent dangerouslySetInnerHTML={{
-            __html: returnValue
-        }} {...props}/>
-
-    } else {
-        if (Component)
-            returnValue = <Component {...props}>{returnValue}</Component>;
-    }
 
     return (
-        <EditableClient name={name} value={siteVarValue}>
-            {returnValue}
-        </EditableClient>
+        <EditableClient name={name}
+                        html={html}
+                        component={component}
+                        value={siteVarValue}
+                        {...props}
+        />
     )
 }
-

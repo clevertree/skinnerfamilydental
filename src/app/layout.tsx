@@ -36,9 +36,7 @@ export default async function RootLayout({children}: { children: React.ReactNode
         isAdmin = session && session.userType === 'admin';
         editMode = process.env.NEXT_PUBLIC_EDIT_MODE === 'true' && isAdmin;
     }
-
-
-    console.log('session', isAdmin, editMode)
+    // console.log('session', isAdmin, editMode)
     return (
         <html lang="en">
         <head>

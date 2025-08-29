@@ -1,5 +1,6 @@
 'use client'
 import {EditableContext} from "@components/Editable/Context/EditableContext";
+import {useRouter} from "next/navigation";
 import {useContext, useEffect, useRef, useState} from "react";
 import {SiteVariables} from "@util/editable";
 import {
@@ -28,6 +29,7 @@ export default function SiteEditor({
                                        onSubmit,
                                        onLogOut
                                    }: SiteEditorProps) {
+    const router = useRouter();
     const {
         showEditor, closeEditor,
         editVarName,
@@ -86,6 +88,8 @@ export default function SiteEditor({
             }
             setShowConfirmModal(false);
             setPendingAction(null);
+            router.refresh();
+
         } catch (error) {
             console.error('Error saving:', error);
         }
@@ -129,6 +133,7 @@ export default function SiteEditor({
     const handleLogout = async () => {
         try {
             await onLogOut();
+            router.refresh();
         } catch (error) {
             console.error('Error logging out:', error);
         }

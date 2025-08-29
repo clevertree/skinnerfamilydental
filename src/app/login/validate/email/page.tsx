@@ -1,5 +1,3 @@
-import {Stack} from '@mui/material';
-import Link from 'next/link';
 import LoginValidationForm from '@components/Session/LoginValidationForm';
 
 import {loginEmailValidationAction} from '@util/emailActions';
@@ -23,17 +21,11 @@ export default async function LoginEmailValidationPage(
 
     return (
         <>
-            <h1 className="m-auto text-[color:var(--gold-color)] italic"> Login</h1>
-
             <LoginValidationForm
                 receiver={email}
                 loginValidationAction={loginEmailValidationAction}
                 defaultCode={defaultCode}
             />
-
-            <Stack sx={{margin: 'auto'}} direction="column">
-                <Link href="/login">Click here to log in as an </Link>
-            </Stack>
         </>
     );
 }

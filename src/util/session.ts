@@ -73,6 +73,11 @@ export async function getSessionCookie() {
     return (await cookies()).get('session')?.value;
 }
 
+export async function decryptSession() {
+    const cookie = await getSessionCookie();
+    return await decrypt(cookie) as SessionPayload;
+}
+
 export async function validateSession() {
     const session = await decryptSession();
     if (!session || !session.userID) throw HttpError.Unauthorized('Unauthorized - Please login');

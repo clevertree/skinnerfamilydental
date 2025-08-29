@@ -21,7 +21,7 @@ export async function fetchSiteVars() {
         const {key, value} = siteVar.dataValues;
         cachedSiteVars[key as keyof SiteVariables] = value;
     }
-    console.log('SiteVars:', cachedSiteVars);
+    // console.log('SiteVars:', cachedSiteVars);
     return cachedSiteVars;
 }
 

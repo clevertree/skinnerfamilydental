@@ -20,9 +20,7 @@ export default function EditableClient({
                                            ...props
                                        }: EditableClientProps) {
     const {editMode, openEditor, showEditor, editVarUpdatedValue, editVarName} = useContext(EditableContext);
-    if (!editMode)
-        return value;
-    const showValue: string = (name === editVarName && showEditor) ? `${editVarUpdatedValue}` : value;
+    const showValue: string = (editMode && name === editVarName && showEditor) ? `${editVarUpdatedValue}` : value;
     let returnValue: React.ReactNode | string = showValue;
     if (html) {
         const HTMLComponent = Component || 'span'
@@ -34,6 +32,8 @@ export default function EditableClient({
         if (Component)
             returnValue = <Component {...props}>{returnValue}</Component>;
     }
+    if (!editMode)
+        return returnValue
 
     return (
         <span onClick={(e) => {

@@ -1,6 +1,6 @@
 'use server'
 
-import {SiteVar} from "@util/pgclient";
+import {getSequelize, SiteVar} from "@util/pgclient";
 import {revalidatePath} from "next/cache";
 
 export interface SiteVariables {
@@ -15,13 +15,18 @@ export async function fetchSiteVars() {
     if (cachedSiteVars) {
         return cachedSiteVars;
     }
-    cachedSiteVars = {};
-    const siteVarList = await SiteVar.findAll();
-    for (const siteVar of siteVarList) {
-        const {key, value} = siteVar.dataValues;
-        cachedSiteVars[key as keyof SiteVariables] = value;
+    try {
+        await getSequelize();
+        cachedSiteVars = {};
+        const siteVarList = await SiteVar.findAll();
+        for (const siteVar of siteVarList) {
+            const {key, value} = siteVar.dataValues;
+            cachedSiteVars[key as keyof SiteVariables] = value;
+        }
+        // console.log('SiteVars:', cachedSiteVars);
+    } catch (e: unknown) {
+        console.error('Error fetching site vars: ', e);
     }
-    // console.log('SiteVars:', cachedSiteVars);
     return cachedSiteVars;
 }
 

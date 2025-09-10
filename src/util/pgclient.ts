@@ -131,20 +131,29 @@ export class User2FactorCode extends Model {
 
 /** End Models **/
 
-const sequelize = new Sequelize(`${process.env.DATABASE_URL}`, {
-    dialect: 'postgres',
-    dialectModule: pg,
-    dialectOptions: {
-        ssl: process.env.NODE_ENV === 'production' ? {
-            require: true,
-            rejectUnauthorized: false
-        } : false
-    },
-    logging: false,
-    models: [SiteVar, User, UserLog, User2FactorCode],
-});
 
-await sequelize.sync();
+let sequelize: Sequelize | undefined;
+
+export async function getSequelize() {
+    if (sequelize) {
+        return sequelize;
+    }
+
+    sequelize = new Sequelize(`${process.env.DATABASE_URL}`, {
+        dialect: 'postgres',
+        dialectModule: pg,
+        dialectOptions: {
+            ssl: process.env.NODE_ENV === 'production' ? {
+                require: true,
+                rejectUnauthorized: false
+            } : false
+        },
+        logging: false,
+        models: [SiteVar, User, UserLog, User2FactorCode],
+    });
+
+    await sequelize.sync();
+}
 
 // const jane = await SiteVar.create({
 //     key: 'janedoe',

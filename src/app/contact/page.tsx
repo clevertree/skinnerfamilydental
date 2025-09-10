@@ -1,6 +1,5 @@
 import React from 'react';
-import ContactForm from "@components/Forms/ContactForm";
-import {sendContactFormEmail} from "../../actions/emailActions";
+import ContactFormWeb3 from "@components/Forms/ContactFormWeb3";
 import {Typography} from "@mui/material";
 import {Metadata} from "next";
 import {buildMetaData} from "@util/metadata";
@@ -66,7 +65,7 @@ export default function ContactPage() {
                                         routine cleanings or emergency
                                         services today.
                                     </Typography>
-                                    <ContactForm sendForm={sendContactFormEmail}/>
+                                    <ContactFormWeb3/>
                                 </div>
                             </div>
                         </div>

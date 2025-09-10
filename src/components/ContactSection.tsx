@@ -1,5 +1,4 @@
-import ContactForm from "@components/Forms/ContactForm";
-import {sendContactFormEmail} from "../actions/emailActions";
+import ContactFormWeb3 from "@components/Forms/ContactFormWeb3";
 import React from "react";
 import {Paper} from "@mui/material";
 
@@ -22,7 +21,7 @@ export function ContactSection() {
                     </p>
                 </div>
             </div>
-            <ContactForm sendForm={sendContactFormEmail}/>
+            <ContactFormWeb3/>
         </Paper>
     </div>
 

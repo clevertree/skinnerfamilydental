@@ -1,7 +1,7 @@
 'use client'
 import {EditableContext} from "@components/Editable/Context/EditableContext";
 import {useRouter} from "next/navigation";
-import {useContext, useEffect, useRef, useState} from "react";
+import {useCallback, useContext, useEffect, useRef, useState} from "react";
 import {SiteVariables} from "@util/editable";
 import {
     Backdrop,
@@ -73,7 +73,7 @@ export default function SiteEditor({
         updateEditorValue(newValue);
     };
 
-    const handleSave = async () => {
+    const handleSave = useCallback(async () => {
         if (!editVarName)
             throw new Error("Invalid editVarName")
         if (!editVarUpdatedValue)
@@ -92,16 +92,16 @@ export default function SiteEditor({
         } catch (error) {
             console.error('Error saving:', error);
         }
-    };
+    }, [editVarName, editVarUpdatedValue, onSubmit, closeEditor, pendingAction, router]);
 
-    const handleClose = () => {
+    const handleClose = useCallback(() => {
         if (isDirty) {
             setPendingAction('close');
             setShowConfirmModal(true);
         } else {
             closeEditor();
         }
-    };
+    }, [closeEditor, isDirty]);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -150,7 +150,7 @@ export default function SiteEditor({
             } else if (event.key === 'Enter' && (event.ctrlKey || event.metaKey)) {
                 event.preventDefault();
                 if (isDirty) {
-                    handleSave();
+                    handleSave().then();
                 } else {
                     closeEditor();
                 }
@@ -164,7 +164,7 @@ export default function SiteEditor({
         return () => {
             document.removeEventListener('keydown', handleKeyDown);
         };
-    }, [showEditor, isDirty]);
+    }, [showEditor, isDirty, handleClose, handleSave, closeEditor]);
 
     if (!showEditor) {
         return null;

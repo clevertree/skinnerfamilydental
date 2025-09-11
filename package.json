@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "build-start": "next build; next start;",
+    "build-start": "next build && next start;",
     "start": "next start",
     "lint": "next lint --fix",
     "test:e2e": "cypress run",

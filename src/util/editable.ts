@@ -15,9 +15,10 @@ export async function fetchSiteVars() {
     if (cachedSiteVars) {
         return cachedSiteVars;
     }
+    // Set empty site vars in case database fails
+    cachedSiteVars = {};
     try {
         await getSequelize();
-        cachedSiteVars = {};
         const siteVarList = await SiteVar.findAll();
         for (const siteVar of siteVarList) {
             const {key, value} = siteVar.dataValues;

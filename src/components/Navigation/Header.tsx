@@ -23,9 +23,9 @@ export default async function Header() {
                     <div className="">
                         <p className="text leading-[1.1em] text-xl text-right font-extrabold">
                             <a href="/contact">
-                                <Editable
-                                    name='HEADER_MAKE_APPOINTMENT'
-                                    defaultValue='MAKE APPOINTMENT'/>
+                                <Editable name='HEADER_MAKE_APPOINTMENT'>
+                                    {'MAKE APPOINTMENT'}
+                                </Editable>
                             </a>
                         </p>
                     </div>
@@ -33,8 +33,9 @@ export default async function Header() {
                         <p className="text leading-[1.1em] text-xl text-right font-extrabold">
                             <a href={`tel:+1${CONTACT_PHONE.replace(/\D+/g, '')}`}>
                                 <FontAwesomeIcon width={18} height={18} icon={faPhone} className='mr-2'/>
-                                <Editable name='CONTACT_PHONE'
-                                          defaultValue={CONTACT_PHONE}/>
+                                <Editable name='CONTACT_PHONE'>
+                                    {CONTACT_PHONE}
+                                </Editable>
                             </a>
                         </p>
                     </div>

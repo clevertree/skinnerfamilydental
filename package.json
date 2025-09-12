@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "build-start": "next build && next start;",
+    "build-start": "next build && next start",
     "start": "next start",
     "lint": "next lint --fix",
     "test:e2e": "cypress run",
@@ -16,6 +16,7 @@
     "test:clear": "cypress cache clear"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.31.10",
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
     "@fortawesome/free-regular-svg-icons": "^7.0.0",
@@ -25,7 +26,8 @@
     "@mui/material": "^7.3.1",
     "@mui/material-nextjs": "^7.2.0",
     "jose": "^6.1.0",
-    "next": "^15.4.6",
+    "markdown-to-jsx": "^7.7.13",
+    "next": "15.4.7",
     "nodemailer": "^7.0.3",
     "pg": "^8.16.3",
     "pg-hstore": "^2.3.4",

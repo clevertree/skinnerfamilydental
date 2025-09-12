@@ -7,26 +7,26 @@ import {fetchSiteVars} from "@util/editable";
 
 export interface EditableProps extends HTMLAttributes<HTMLElement> {
     name: VariableName,
-    defaultValue: string,
+    children: string,
     component?: React.ElementType<DOMAttributes<HTMLElement>>,
-    html?: boolean
+    type?: 'text' | 'markdown' | 'html'
 }
 
 export default async function Editable({
                                            name,
                                            component,
-                                           html = false,
-                                           defaultValue,
+                                           type = 'text',
+                                           children,
                                            ...props
                                        }: EditableProps) {
     const siteVars = await fetchSiteVars()
 
     const siteVar = siteVars && siteVars[name] ? siteVars[name] : null;
-    const siteVarValue = siteVar || defaultValue
+    const siteVarValue = siteVar || children
 
     return (
         <EditableClient name={name}
-                        html={html}
+                        type={type}
                         component={component}
                         value={siteVarValue}
                         {...props}

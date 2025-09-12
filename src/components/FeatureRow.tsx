@@ -1,9 +1,13 @@
 import React from 'react';
 import Image from "next/image";
 import AnimationWrapper from "@components/Animation/AnimationWrapper";
+import {SiteVariables} from "@util/editable";
+import Editable from "@components/Editable/Editable";
 
 interface FeatureRowProps {
+    headlineVar: keyof SiteVariables
     headline: string,
+    bodyVar: keyof SiteVariables,
     body: string,
     buttonText: string,
     buttonHref: string,
@@ -13,7 +17,11 @@ interface FeatureRowProps {
 }
 
 const FeatureRow: React.FC<FeatureRowProps> = ({
-                                                   headline, body, buttonText, buttonHref, imgSrc,
+                                                   headline,
+                                                   headlineVar,
+                                                   body,
+                                                   bodyVar,
+                                                   buttonText, buttonHref, imgSrc,
                                                    className = "", reverse = false
                                                }) => (
     <div className={className + " row"}>
@@ -22,10 +30,18 @@ const FeatureRow: React.FC<FeatureRowProps> = ({
                 <div className="module autospacer"/>
                 <div className="flexWrap">
                     <div className="module text">
-                        <p className="headline">{headline}</p>
+                        <p className="headline">
+                            <Editable name={headlineVar}>
+                                {headline}
+                            </Editable>
+                        </p>
                     </div>
                     <div className="module text">
-                        <p className="bodytext">{body}</p>
+                        <p className="bodytext">
+                            <Editable name={bodyVar}>
+                                {body}
+                            </Editable>
+                        </p>
                     </div>
                     <AnimationWrapper method='zoom-in'>
                         <a className="button2 mt-4" href={buttonHref} role="button">

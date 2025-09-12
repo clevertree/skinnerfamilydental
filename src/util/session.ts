@@ -7,6 +7,7 @@ import {UserType} from "@util/pgclient";
 
 import {ActionResponse} from "@util/types";
 import {addUserLogEntry} from "@util/logActions";
+import {auth, currentUser} from "@clerk/nextjs/server";
 
 export interface SessionPayload extends JWTPayload {
     userID: number,
@@ -78,9 +79,35 @@ export async function decryptSession() {
     return await decrypt(cookie) as SessionPayload;
 }
 
+export async function isAdminSession() {
+    const session = await auth();
+    if (session.isAuthenticated) {
+        const user = await currentUser();
+        if (user) {
+            const userType = user.publicMetadata.type as string | undefined;
+            if (userType === 'admin') {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 export async function validateSession() {
-    const session = await decryptSession();
-    if (!session || !session.userID) throw HttpError.Unauthorized('Unauthorized - Please login');
+    const session = await auth();
+    if (!session.isAuthenticated) throw new Error('Unauthorized - Please login');
+    return session;
+    // const session = await decryptSession();
+    // if (!session || !userProfile.id) throw HttpError.Unauthorized('Unauthorized - Please login');
+    // return session;
+}
+
+export async function validateAdminSession() {
+    const session = await validateSession();
+    const user = await currentUser();
+    if (!user) throw HttpError.Unauthorized('Unauthorized - Please login');
+    const userType = user.publicMetadata.type as string | undefined;
+    if (userType !== 'admin') throw HttpError.Unauthorized('Unauthorized - Admin access required');
     return session;
 }
 

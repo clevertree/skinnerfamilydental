@@ -24,6 +24,8 @@ export default async function HomePage() {
                         <ServicesGrid/>
                         <FeatureRow headline="Friendly & Inviting"
                                     body="Our office provides a friendly and inviting atmosphere to put you at ease during every visit. We offer blankets, headphones, coffee, and have TV's, movies and a beautiful, clean waiting room to optimize the comfort of all of our patients. Come by and experience it for yourself!"
+                                    headlineVar='HOME_PAGE_FEATURE_HEADLINE_TOUR'
+                                    bodyVar='HOME_PAGE_FEATURE_BODY_TOUR'
                                     className='bg-gray-100'
                                     imgSrc="/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-005.jpg"
                                     buttonText="TOUR OUR OFFICE"
@@ -32,18 +34,25 @@ export default async function HomePage() {
                                     className='bg-white'
                                     imgSrc="/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-006.jpg"
                                     body="Have peace of mind knowing that you will only be advised to undergo the necessary procedures and services and you will not be overcharged. We pride ourselves in offering the services you need, when you then them, with the quality of care and attention you deserve."
+                                    headlineVar='HOME_PAGE_FEATURE_HEADLINE_SERVICES'
+                                    bodyVar='HOME_PAGE_FEATURE_BODY_SERVICES'
                                     buttonText="VIEW ALL SERVICES" buttonHref="/service"/>
                         <FeatureRow headline="State of the Art Technology"
                                     className='bg-gray-100'
                                     imgSrc="/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-007.jpg"
                                     body="Our practice is fully equipped with state-of-the-art technology. We are one of the only practices in Savannah that has a Cerec machine, which makes and cures the crown, all during one office visit which means it is extremely convenient and saves you time!"
+                                    headlineVar='HOME_PAGE_FEATURE_HEADLINE_APPOINTMENT'
+                                    bodyVar='HOME_PAGE_FEATURE_BODY_APPOINTMENT'
                                     buttonText="MAKE A APPOINTMENT" buttonHref="/contact"/>
                         <FeatureRow headline="Unleash Your Brightness with Zoom Professional Teeth Whitening"
                                     reverse
                                     className='bg-white'
                                     imgSrc="/uploads/img/Dr.StephanieL.Skinner-FamilyDentistry-008.jpg"
                                     body="Get $40 off your in-office 1-hour whitening treatment!"
-                                    buttonText="LEARN MORE" buttonHref="/service"/>
+                                    headlineVar='HOME_PAGE_FEATURE_HEADLINE_LEARN'
+                                    bodyVar='HOME_PAGE_FEATURE_BODY_LEARN'
+                                    buttonText="LEARN MORE" buttonHref="/service"
+                        />
                         <TestimonyCarousel/>
                         <ContactSection/>
                         <BiographySection/>

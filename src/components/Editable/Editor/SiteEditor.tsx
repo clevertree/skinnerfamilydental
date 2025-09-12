@@ -88,7 +88,10 @@ export default function SiteEditor({
             }
             setShowConfirmModal(false);
             setPendingAction(null);
-            router.refresh();
+            setTimeout(() => {
+                console.log('Refreshing page...');
+                router.refresh();
+            }, 1000)
         } catch (error) {
             console.error('Error saving:', error);
         }

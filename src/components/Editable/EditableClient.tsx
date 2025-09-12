@@ -4,35 +4,45 @@ import React, {DOMAttributes, HTMLAttributes, useContext} from "react";
 import {EditableContext, VariableName} from "@components/Editable/Context/EditableContext";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEdit} from "@fortawesome/free-solid-svg-icons";
+import Markdown from 'markdown-to-jsx';
 
 export interface EditableClientProps extends HTMLAttributes<HTMLElement> {
     name: VariableName,
     value: string,
-    html: boolean
+    type?: 'text' | 'markdown' | 'html'
     component?: React.ElementType<DOMAttributes<HTMLElement>>,
 }
 
 export default function EditableClient({
                                            name,
                                            value,
-                                           html,
+                                           type,
                                            component: Component,
                                            ...props
                                        }: EditableClientProps) {
     const {editMode, openEditor, showEditor, editVarUpdatedValue, editVarName} = useContext(EditableContext);
-    const showValue: string = (editMode && name === editVarName && showEditor) ? `${editVarUpdatedValue}` : value;
+    const showValue: string = (editMode
+        && (name === editVarName)
+        && showEditor) ? `${editVarUpdatedValue}` : value;
     let returnValue: React.ReactNode | string = showValue;
-    if (html) {
+
+    if (type === 'html') {
         const HTMLComponent = Component || 'span'
         returnValue = <HTMLComponent dangerouslySetInnerHTML={{
             __html: showValue
         }} {...props}/>
 
+    } else if (type === 'markdown') {
+        returnValue = <Markdown options={{
+            wrapper: Component
+        }}>
+                                 {showValue}
+        </Markdown>
     } else {
         if (Component)
-            returnValue = <Component {...props}>{returnValue}</Component>;
+            returnValue = <Component {...props}>{showValue}</Component>;
     }
-    if (!editMode)
+    if (!editMode || !name)
         return returnValue
 
     return (

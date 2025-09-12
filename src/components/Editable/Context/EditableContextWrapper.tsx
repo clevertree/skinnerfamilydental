@@ -20,7 +20,7 @@ export default function EditableContextWrapper({children, editMode}: {
                 editVarName,
                 editVarDefaultValue: editVarValue,
                 editVarUpdatedValue: editVarValue,
-                showEditor: true,
+                showEditor: !!editVarName,
             }))
         },
         updateEditorValue(editVarUpdatedValue: string) {

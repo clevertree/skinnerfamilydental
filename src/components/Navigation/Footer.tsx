@@ -75,11 +75,12 @@ const Footer: React.FC<FooterProps> = ({
             <section className="row brandfooter" role="contentinfo" aria-label="Brand Footer">
                 <div className="container container-">
                     <div className="col col-sm-12 text-left">
-                        <Editable html
+                        <Editable type={'markdown'}
                                   className='[&>a]:font-bold'
                                   name='FOOTER_MANAGED_BY_HTML'
-                                  defaultValue='Managed by <a href="mailto:ari@asu.edu" target="_blank">Ari</a>'
-                        />
+                        >
+                            {'Managed by [Ari](mailto:ari@asu.edu)'}
+                        </Editable>
                     </div>
                 </div>
             </section>
